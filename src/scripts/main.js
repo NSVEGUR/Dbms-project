@@ -1,7 +1,4 @@
 import './../styles/style.css';
-import Data from './data';
-
-document.querySelector('#dock').innerHTML = Data.dockContainer;
 
 const icons = document.querySelectorAll('.icon > div');
 icons.forEach((icon, i) => {
