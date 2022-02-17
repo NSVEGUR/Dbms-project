@@ -1,10 +1,14 @@
 import './../styles/style.css';
 
 const dockContainer = `<div class="dock-container">
-<button class="icon">
+	<button class="icon">
 	<div>
 		<span>DBMS</span>
 		<img class="app-icon" src="assets/icons/dbms.png" />
+	</div>
+	<div>
+		<span>MySql</span>
+		<img class="app-icon" src="assets/icons/mysql.png" />
 	</div>
 	<div>
 		<span>Harsha</span>
