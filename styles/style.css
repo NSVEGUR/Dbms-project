@@ -1,4 +1,5 @@
 @import './global.css';
+@import './winbox.css';
 
 #dock{
 	margin-bottom: 1rem;

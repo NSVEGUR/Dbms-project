@@ -1,36 +1,23 @@
 import './../styles/style.css';
+import Data from './data';
 
-const dockContainer = `<div class="dock-container">
-	<button class="icon">
-	<div class="icon-1 active">
-		<span>Finder</span>
-		<img class="app-icon" src="assets/icons/finder.png" />
-	</div>
-	<div class="icon-2">
-		<span>MySql</span>
-		<img class="app-icon" src="assets/icons/mysql.png" />
-	</div>
-	<div class="icon-3">
-		<span>Harsha</span>
-		<img class="app-icon" src="assets/icons/harsha.png" />
-	</div>
-	<div class="icon-4">
-		<span>Praveen</span>
-		<img class="app-icon" src="assets/icons/praveen.png" />
-	</div>
-	<div class="icon-5">
-		<span>Ravindar</span>
-		<img class="app-icon" src="assets/icons/ravindar.png" />
-	</div>
-	<div class="icon-6">
-		<span>Vineeth</span>
-		<img class="app-icon" src="assets/icons/vineeth.png" />
-	</div>
-	<div class="icon-7">
-		<span>Nagasai</span>
-		<img class="app-icon" src="assets/icons/nagasai.png" />
-	</div>
-</button>
-</div>`;
+document.querySelector('#dock').innerHTML = Data.dockContainer;
 
-document.querySelector('#dock').innerHTML = dockContainer;
+const icons = document.querySelectorAll('.icon > div');
+icons.forEach((icon, i) => {
+	icon.addEventListener('click', (e) => {
+		new WinBox(icon.querySelector('span').innerHTML.toString(), {
+			background: "#121212",
+			top: 50 + 5 * i,
+			right: 50,
+			bottom: 150,
+			left: 50 + 50 * i,
+		});
+		icons.forEach((icon) => {
+			icon.classList.remove('active');
+		});
+		icon.classList.add('active');
+	});
+})
+
+
