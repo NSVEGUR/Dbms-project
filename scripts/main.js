@@ -3,8 +3,8 @@ import './../styles/style.css';
 const dockContainer = `<div class="dock-container">
 	<button class="icon">
 	<div class="icon-1 active">
-		<span>DBMS</span>
-		<img class="app-icon" src="assets/icons/dbms.png" />
+		<span>Finder</span>
+		<img class="app-icon" src="assets/icons/finder.png" />
 	</div>
 	<div class="icon-2">
 		<span>MySql</span>
