@@ -2,31 +2,31 @@ import './../styles/style.css';
 
 const dockContainer = `<div class="dock-container">
 	<button class="icon">
-	<div>
+	<div class="icon-1 active">
 		<span>DBMS</span>
 		<img class="app-icon" src="assets/icons/dbms.png" />
 	</div>
-	<div>
+	<div class="icon-2">
 		<span>MySql</span>
 		<img class="app-icon" src="assets/icons/mysql.png" />
 	</div>
-	<div>
+	<div class="icon-3">
 		<span>Harsha</span>
 		<img class="app-icon" src="assets/icons/harsha.png" />
 	</div>
-	<div>
+	<div class="icon-4">
 		<span>Praveen</span>
 		<img class="app-icon" src="assets/icons/praveen.png" />
 	</div>
-	<div>
+	<div class="icon-5">
 		<span>Ravindar</span>
 		<img class="app-icon" src="assets/icons/ravindar.png" />
 	</div>
-	<div>
+	<div class="icon-6">
 		<span>Vineeth</span>
 		<img class="app-icon" src="assets/icons/vineeth.png" />
 	</div>
-	<div>
+	<div class="icon-7">
 		<span>Nagasai</span>
 		<img class="app-icon" src="assets/icons/nagasai.png" />
 	</div>
