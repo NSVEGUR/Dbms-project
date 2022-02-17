@@ -1,0 +1,21 @@
+.winbox {
+	border-radius: 10px;
+	border: none;
+	box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+}
+.wb-body {
+	/* the width of window border: */
+	margin: 1px;
+	border-radius: 10px;
+	color: #fff;
+	background: #131820;
+}
+
+.wb-icon * {
+	opacity: 0.65;
+}
+
+.wb-icon *:hover {
+	opacity: 1;
+}
