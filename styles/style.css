@@ -1,119 +1,262 @@
-@import './global.css';
-@import './winbox.css';
+@import "./global.css";
+@import "./winbox.css";
 
-#dock{
-	margin-bottom: 1rem;
-		left: 0;
-		bottom: 0;
-		z-index: 9900;
-		position: fixed;
-
-		width: 100%;
-		height: 6.5rem;
-
-		padding: 0.4rem;
-
-		display: flex;
-		justify-content: center;
+:root {
+  --bg-color: rgba(0, 0, 0, 0.5);
 }
 
-.dock-container{
-	backdrop-filter: blur(5px);
-	box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
-	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+.wrapper {
+  background-color: var(--bg-color);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+    0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 5px;
+}
 
-	padding: 0.3rem;
+.wrapper nav {
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  justify-content: space-between;
+}
 
-	border-radius: 1.2rem;
+nav .content {
+  display: flex;
+  align-items: center;
+}
 
-	height: 100%;
+nav .content .links {
+  margin-left: 25px;
+  display: flex;
+}
 
-	display: flex;
-	align-items: flex-end;
+.content .logo a {
+  margin-left: 1rem;
+  color: black;
+}
+
+.content .links li {
+  list-style: none;
+}
+
+.content .links li a {
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.content .links li a:hover {
+  background: #4e2b8c;
+}
+
+.wrapper .menu-icon {
+  display: none;
+}
+
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+
+#time {
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    backdrop-filter: inherit;
+    box-shadow: none;
+  }
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links {
+    margin-left: 30px;
+  }
+  .content .links li a {
+    padding: 8px 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+
+  nav .content .links {
+    display: block;
+    position: fixed;
+    background: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 360px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links {
+    left: 0%;
+  }
+  .content .links li {
+    margin: 15px 20px;
+  }
+  .content .links li a {
+    line-height: 40px;
+    font-size: 1.25rem;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+
+  .content .links ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  .content .links ul li {
+    margin: 7px 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .content .links li a {
+    font-size: 0.75rem;
+    padding: 2px 5px;
+  }
+
+  nav .content .links {
+    padding-bottom: 0px;
+  }
+
+  .content .links li {
+    margin: 1px 1px;
+  }
+}
+
+#dock {
+  margin-bottom: 1rem;
+  left: 0;
+  bottom: 0;
+  z-index: 9900;
+  position: fixed;
+
+  width: 100%;
+  height: 6.5rem;
+
+  padding: 0.4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.dock-container {
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+    0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+
+  padding: 0.3rem;
+
+  border-radius: 1.2rem;
+
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
 }
 
 .icon {
-	color: inherit;
-	text-decoration: none;
-	vertical-align: middle;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
 
-	border: 0;
-	border-radius: 0;
+  border: 0;
+  border-radius: 0;
 
-	outline: 0;
+  outline: 0;
 
-	margin: 3px 4px;
-	padding: 0;
+  margin: 3px 4px;
+  padding: 0;
 
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-	position: relative;
+  position: relative;
 
-	user-select: none;
+  user-select: none;
 
-	appearance: none;
+  appearance: none;
 
-	background-color: transparent;
-	-webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.icon:not(:disabled){
-	cursor: pointer;
+.icon:not(:disabled) {
+  cursor: pointer;
 }
 
-.icon div{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	align-items: center;
+.icon div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
 
-.icon div span{
-	position: absolute;
-	top: -1.5rem;
-	color: rgb(0, 0, 0);
-	background: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(5px);
-	box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
-	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+.icon div span {
+  position: absolute;
+  top: -1.5rem;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+    0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
 
-	padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.5rem;
 
-	border-radius: 0.3rem;
-	display: none;
-	transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  display: none;
+  transition: all 0.3s ease;
 }
 
-.icon div:hover span{
-	display: block;
+.icon div:hover span {
+  display: block;
 }
 
 .app-icon {
-	width: 78px;
-	height: auto;
-	position: relative;
+  width: 78px;
+  height: auto;
+  position: relative;
 }
 
-.active::after{
-	content: '';
-	position: absolute;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.5);
-	bottom: -3px;
+.active::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  bottom: -3px;
 }
 @media (max-width: 768px) {
-	#dock{
-		height:5rem;
-	}
-	.dock-container {
-		max-width: 95%;
-		overflow: scroll;
-	}
-	.app-icon{
-		width: 58px;
-	}
+  #dock {
+    height: 5rem;
+  }
+  .dock-container {
+    max-width: 95%;
+    overflow: scroll;
+  }
+  .app-icon {
+    width: 58px;
+  }
 }
