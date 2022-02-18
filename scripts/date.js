@@ -1,7 +1,5 @@
 `use strict`;
 var datetime = new Date();
-console.log(datetime);
-document.getElementById("time").textContent = datetime;
 var today = new Date();
 var day = today.getDay();
 var daylist = ["Sun", "Mon", "Tue", "Wed ", "Thu", "Fri", "Sat"];
@@ -31,4 +29,5 @@ function refreshTime() {
   timeDisplay.textContent =
     daylist[day] + " " + monthList[m] + " " + d + " " + formattedString;
 }
+refreshTime();
 setInterval(refreshTime, 1000);
