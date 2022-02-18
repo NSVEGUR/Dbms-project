@@ -1,4 +1,4 @@
-import './winbox.bundle.js';
+import './winbox.js';
 
 const icons = document.querySelectorAll('.icon > div');
 icons.forEach((icon, i) => {
@@ -10,6 +10,8 @@ icons.forEach((icon, i) => {
 			right: 10,
 			bottom: 40,
 			left: 10,
+			width: '60%',
+			height: '75%',
 			onfocus: function () {
 				this.setBackground("#121212bF");
 				icons.forEach((i) => {
