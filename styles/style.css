@@ -21,21 +21,26 @@
   max-width: calc(100% - 200px);
   justify-content: space-between;
 }
+
 nav .content {
   display: flex;
   align-items: center;
 }
+
 nav .content .links {
   margin-left: 25px;
   display: flex;
 }
+
 .content .logo a {
   margin-left: 1rem;
   color: black;
 }
+
 .content .links li {
   list-style: none;
 }
+
 .content .links li a {
   color: black;
   font-size: 13px;
