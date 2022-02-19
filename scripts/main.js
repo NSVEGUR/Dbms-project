@@ -1,5 +1,6 @@
+import './splash.js';
 import './winbox.js';
-import './desktop.js';
+// import './desktop.js';
 
 const dockIcons = document.querySelectorAll('.icon > div');
 const menuIcons = document.querySelectorAll('.content > ul > li > a');
