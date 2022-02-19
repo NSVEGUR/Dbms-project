@@ -5,6 +5,48 @@
   --bg-color: rgba(0, 0, 0, 0.5);
 }
 
+main{
+  width: 100%;
+  height: 100%;
+  background: url("./../assets/dark-mac-bg.jpeg") center center no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+#splash{
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  font-size:5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.loading-container .loading-bar{
+  width: 12%;
+  height: 4px;
+  border-radius:20px;
+  background: grey;
+}
+
+.loading-container .loading-bar .loading-indicator{
+  height: 4px;
+  width: 100%;
+  border-radius: 20px;
+  background: white;
+  animation: loading 2.5s forwards cubic-bezier(.76,-0.13,.67,.82);
+}
 .wrapper {
   background-color: var(--bg-color);
   backdrop-filter: blur(20px);
@@ -29,7 +71,10 @@ nav .content .links {
   display: flex;
 }
 
+.content .logo{
+  position: relative;
 
+}
 .content .logo a{
   color: white;
   cursor:default;
@@ -48,6 +93,7 @@ nav .content .links {
   list-style: none;
   position: relative;
   border-radius: 5px;
+  margin: 2px 0;
   transition: all 0.3s ease;
 }
 
@@ -136,8 +182,11 @@ nav .content .links {
   .content .links li a {
     padding: 8px 13px;
   }
+  .content .logo .logo-link {
+    margin-left: 0rem;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .wrapper .menu-icon {
     display: block;
   }
@@ -182,6 +231,9 @@ nav .content .links {
   .content .links ul li {
     margin: 7px 20px;
   }
+  .content .logo .logo-link {
+    margin-left: -1rem;
+  }
 }
 @media screen and (max-width: 460px) {
   .content .links li a {
@@ -192,7 +244,11 @@ nav .content .links {
     margin-left: 0;
   }
   
+  #splash{
 
+    font-size:2.5rem;
+
+  }
   nav .content .links {
     padding-bottom: 0px;
   }
@@ -316,5 +372,21 @@ nav .content .links {
   }
   .app-icon {
     width: 58px;
+  }
+}
+
+@keyframes loading {
+  0%{
+    width:0%;
+  }100%{
+    width: 100%;
+  }
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
   }
 }

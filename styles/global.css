@@ -12,9 +12,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background: black;
   font-family: var(--primary-font);
-  background: url("./../assets/dark-mac-bg.jpeg") center center no-repeat;
-  background-size: cover;
   font-size: var(--primary-font-size);
 }
 h1,
