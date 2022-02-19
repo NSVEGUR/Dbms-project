@@ -16,6 +16,7 @@ main{
 #splash{
   width: 100%;
   height: 100%;
+  cursor: none;
   background: black;
   color: white;
   font-size:5rem;
@@ -47,6 +48,11 @@ main{
   background: white;
   animation: loading 2.5s forwards cubic-bezier(.76,-0.13,.67,.82);
 }
+#audio {
+    position: absolute;
+    z-index: -9999;
+    display: none;
+  }
 .wrapper {
   background-color: var(--bg-color);
   backdrop-filter: blur(20px);
