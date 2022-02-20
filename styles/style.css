@@ -11,6 +11,7 @@ main{
   background: url("./../assets/dark-mac-bg.jpeg") center center no-repeat;
   background-size: cover;
   display: none;
+  cursor:default;
 }
 
 #splash{
@@ -56,8 +57,9 @@ main{
 .wrapper {
   background-color: var(--bg-color);
   backdrop-filter: blur(20px);
-  position: fixed;
+  position: absolute;
   width: 100vw;
+  z-index: 2147483647;
 }
 
 .wrapper nav {
@@ -70,6 +72,7 @@ main{
 nav .content {
   display: flex;
   align-items: center;
+  cursor:default;
 }
 
 nav .content .links {
@@ -90,6 +93,7 @@ nav .content .links {
 }
 .content .logo a{
   color: white;
+  cursor:default;
 }
 .logo .menu-drop a{
   padding: 10px 10px;
