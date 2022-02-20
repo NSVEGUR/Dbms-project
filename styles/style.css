@@ -79,21 +79,21 @@ nav .content .links {
 
 .content .logo{
   position: relative;
-
-}
-.content .logo a{
   color: white;
   cursor:default;
   padding: 0 10px;
-}
-.content .logo .logo-link {
-  padding: 5px 13px;
+  padding: 0px 13px;
   border-radius:3px;
   margin-left: 1rem;
   color: white;
   cursor:default;
 }
-
+.content .logo a{
+  color: white;
+}
+.logo .menu-drop a{
+  padding: 10px 10px;
+}
 
 .content .links li {
   list-style: none;
@@ -115,9 +115,9 @@ nav .content .links {
   font-size: 13px;
   width: 200px;
   position: absolute;
-  z-index: 999;
+  z-index: 99999;
   top: 41px;
-  left: 10px;
+  left: 0px;
   padding: 10px 5px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -136,17 +136,9 @@ nav .content .links {
 .content .links li .menu-drop div .not-active{
   color: rgba(255, 255, 255, 0.5)
 }
-.content .links li:hover {
-  background: rgba(146, 146, 146, 0.3)
-}
-.content .logo:hover .logo-link{
-  background: rgba(146, 146, 146, 0.3)
-}
-.content .logo:hover .menu-drop{
-  display: block;
-}
-.content .links li:hover .menu-drop{
-  display: block;
+
+.drop-link{
+  border-radius: 5px;
 }
 
 
@@ -173,6 +165,15 @@ nav .content .links {
   cursor:default;
 }
 
+.drop-link:hover{
+  background: #3273ecf3;
+}
+.content .links li .drop-link:hover a{
+  color: black;
+}
+.content .logo .drop-link:hover a{
+  color: black;
+}
 @media screen and (max-width: 1250px) {
   .wrapper {
     backdrop-filter: inherit;
