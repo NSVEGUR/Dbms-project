@@ -1,5 +1,6 @@
 let members = [];
 
+const actionButton = document.getElementById('action-button');
 const dbOSLinks = document.querySelectorAll('.menu-icon-1 > .menu-drop > .drop-link');
 const databaseLinks = document.querySelectorAll('.menu-icon-2 > .menu-drop > .drop-link');
 const mySqlLinks = document.querySelectorAll('.menu-icon-3 > .menu-drop > .drop-link');
@@ -23,6 +24,10 @@ class ManageMenu {
 				icon.querySelector('.menu-drop').style.display = 'block';
 				this.helper.addHoverListeners();
 			});
+		});
+
+		actionButton.addEventListener('click', (e) => {
+			document.querySelector('.action-drop').style.display = 'flex';
 		});
 
 		window.addEventListener('mouseup', (e) => {
