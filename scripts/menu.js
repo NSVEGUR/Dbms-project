@@ -122,13 +122,13 @@ class ManageActionBar {
 				main.style.backgroundImage = 'url("./../assets/light-mac-bg.jpeg")';
 				wallpaperButtonContainer.style.backgroundImage = `url('./../assets/light-mac-bg.jpeg')`;
 				wallpaperButtonText.textContent = 'Dynamic Light Wallpaper';
-				themeGlyph.style.background = '#3273ecf3';
+				themeGlyph.style.background = 'var(--system-transparent-color-primary-op)';
 			}
 			else {
 				main.style.backgroundImage = 'url("./../assets/dark-mac-bg.jpeg")';
 				wallpaperButtonContainer.style.backgroundImage = `url('./../assets/dark-mac-bg.jpeg')`;
 				wallpaperButtonText.textContent = 'Dynamic Dark Wallpaper';
-				themeGlyph.style.background = 'var(--system-transparent-color-primary-op)';
+				themeGlyph.style.background = '#3273ecf3';
 			};
 			document.body.classList.toggle('light-theme');
 			themeGlyph.classList.toggle('system-color');

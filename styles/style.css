@@ -247,6 +247,9 @@ nav .content .links {
   display: grid;
   place-items: center;
 }
+.action-mode div:first-child{
+  background: #3273ecb4;
+}
 .action-notch, .action-wallpaper{
   display: flex;
   flex-direction: row;
@@ -467,7 +470,9 @@ nav .content .links {
   #action-button{
     right: 0px;
   }
-
+  #focus{
+    right: 50px;
+  }
   #time {
     display: none;
   }
