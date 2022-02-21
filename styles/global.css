@@ -7,13 +7,31 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  cursor: var(--system-cursor-default), default;
 }
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+
+  box-shadow: var(--system-focus-outline);
+}
+
+html, body{
+  height: 100%;
+}
+
 body {
   height: 100vh;
   width: 100vw;
+  cursor: var(--system-cursor-default), default;
   overflow: hidden;
   background: black;
   font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: var(--primary-font-size);
    -webkit-user-select: none;
      -moz-user-select: -moz-none;

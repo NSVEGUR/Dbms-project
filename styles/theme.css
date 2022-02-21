@@ -7,4 +7,6 @@
 	--secondary-font: 'PT Serif', serif;
 	--primary-font-size: 1rem;
 	--secondary-font-size: 1.6rem;
+	--system-cursor-default: url('./../assets/glyphs/cursor.png');
+  --system-focus-outline: 0 0 0 3px hsla(var(--system-color-primary-hsl), 0.5);
 }

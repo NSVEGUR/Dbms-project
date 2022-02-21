@@ -5,6 +5,7 @@ class Helper {
 		menuIcons.forEach(icon => {
 			icon.style.background = 'none';
 			icon.querySelector('.menu-drop').style.display = 'none';
+			document.querySelector('.action-drop').style.display = 'none';
 		});
 	}
 	addHoverListeners = () => {
