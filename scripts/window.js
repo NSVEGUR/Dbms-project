@@ -9,6 +9,10 @@ const dockTitles = [
 	'Nagasai',
 ];
 
+let textColor = 'white';
+let focusWindowColor = '#1a1a1d';
+let blurWindowColor = '#1a1a1daf';
+
 class Window {
 	constructor(title = 'DbOS', i = -1) {
 		this.title = title;
@@ -28,17 +32,12 @@ class Window {
 			width: '60%',
 			height: '75%',
 			onfocus: function () {
-				this.setBackground("#121212");
-				dockIcons.forEach((i) => {
-					i.classList.remove('active');
-					if (this.title == i.querySelector('span').innerHTML.toString()) {
-						i.classList.add('active');
-					}
-				});
+				this.setBackground(focusWindowColor);
+				this.body.style.background = focusWindowColor;
 			},
 			onblur: function () {
-				this.setBackground("#121212aF");
-				this.body.style.background = "#121212aF";
+				this.setBackground(blurWindowColor);
+				this.body.style.background = blurWindowColor;
 			},
 			onclose: () => {
 				this.isOpen = false;

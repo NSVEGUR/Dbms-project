@@ -8,5 +8,29 @@
 	--primary-font-size: 1rem;
 	--secondary-font-size: 1.6rem;
 	--system-cursor-default: url('./../assets/glyphs/cursor.png');
-  --system-focus-outline: 0 0 0 3px hsla(var(--system-color-primary-hsl), 0.5);
+	--shadow-effect: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+	--shadow-effect-window: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
+	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.4) 2px 5px 19px 12px;
+	backdrop-filter: blur(5px);
+	
+	/* For System dark-theme */
+	--system-primary-color: #1a1a1d;
+	--system-text-color: white;
+	--system-text-color-op: black;
+	--system-transparent-color-primary: rgba(0, 0, 0, 0.2);
+	--system-transparent-color-secondary: rgba(0, 0, 0, 0.3);
+	--system-transparent-color-primary-op: rgba(255, 255, 255, 0.3);
+	--system-transparent-color-secondary-op: rgba(255, 255, 255, 0.5);
+}
+
+/* For System light-theme */
+.light-theme{
+	--system-primary-color: #fffefe;
+	--system-text-color: black;
+	--system-text-color-op: white;
+	--system-transparent-color-primary: rgba(255, 255, 255, 0.2);
+	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
+	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
+	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);
 }

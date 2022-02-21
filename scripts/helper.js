@@ -1,9 +1,17 @@
 const menuIcons = document.querySelectorAll('.menu-icons');
 
 class Helper {
+	constructor() {
+		const links = document.querySelectorAll('a');
+		links.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				e.preventDefault();
+			})
+		});
+	}
 	resetMenu() {
 		menuIcons.forEach(icon => {
-			icon.style.background = 'none';
+			icon.classList.remove('links-hover');
 			icon.querySelector('.menu-drop').style.display = 'none';
 			document.querySelector('.action-drop').style.display = 'none';
 		});
@@ -20,7 +28,7 @@ class Helper {
 	}
 	showMenuDrop = (e) => {
 		this.resetMenu();
-		e.target.style.background = 'rgba(146, 146, 146, 0.3)';
+		e.target.classList.add('links-hover');
 		e.target.querySelector('.menu-drop').style.display = 'block';
 	}
 }
