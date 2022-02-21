@@ -13,6 +13,8 @@
 	--shadow-effect-window: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7),
 	0 0 0 0.2px hsla(0, 0%, 13%, 0.7), hsla(0, 0%, 0%, 0.4) 2px 5px 19px 12px;
 	backdrop-filter: blur(5px);
+
+	--system-color: #3273ecf3;
 	
 	/* For System dark-theme */
 	--system-primary-color: #1a1a1d;

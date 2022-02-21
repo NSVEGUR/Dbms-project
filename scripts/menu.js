@@ -9,6 +9,8 @@ const focusGlyph = document.querySelector('.focus-glyph');
 const notchGlyph = document.querySelector('.notch-glyph');
 const notch = document.querySelector('.notch');
 const focuS = document.getElementById('focus');
+const colors = document.querySelectorAll('.color');
+const colorCircles = document.querySelectorAll('.color > div');
 const main = document.querySelector('main');
 const wallpaperButtonContainer = document.querySelector('.action-wall');
 const wallpaperButtonText = document.querySelector('.action-wallpaper > div > h4');
@@ -115,6 +117,7 @@ class ManageActionBar {
 		this.manageTheme();
 		this.manageNotch();
 		this.manageFocus();
+		this.manageSystemColors();
 	}
 	manageTheme() {
 		themeButton.addEventListener('click', (e) => {
@@ -128,7 +131,7 @@ class ManageActionBar {
 				main.style.backgroundImage = 'url("./../assets/dark-mac-bg.jpeg")';
 				wallpaperButtonContainer.style.backgroundImage = `url('./../assets/dark-mac-bg.jpeg')`;
 				wallpaperButtonText.textContent = 'Dynamic Dark Wallpaper';
-				themeGlyph.style.background = '#3273ecf3';
+				themeGlyph.style.background = 'var(--system-color)';
 			};
 			document.body.classList.toggle('light-theme');
 			themeGlyph.classList.toggle('system-color');
@@ -139,7 +142,7 @@ class ManageActionBar {
 		notchButton.addEventListener('click', (e) => {
 			notch.classList.toggle('toggle-notch');
 			if (this.notch) notchGlyph.style.background = 'var(--system-transparent-color-primary-op)';
-			else notchGlyph.style.background = '#3273ecf3';
+			else notchGlyph.style.background = 'var(--system-color)';
 			this.notch = !this.notch;
 		});
 	}
@@ -150,11 +153,23 @@ class ManageActionBar {
 				focuS.style.display = 'none';
 			}
 			else {
-				focusGlyph.style.background = '#3273ecf3';
+				focusGlyph.style.background = 'var(--system-color)';
 				focuS.style.display = 'block';
 			}
 			this.focus = !this.focus;
 		});
+	}
+	manageSystemColors() {
+		colors.forEach((color) => {
+			color.addEventListener('click', (e) => {
+				const newColor = getComputedStyle(e.target).getPropertyValue('background');
+				document.documentElement.style.setProperty('--system-color', newColor);
+				colorCircles.forEach((circle) => {
+					circle.style.display = 'none';
+				});
+				e.target.querySelector('div').style.display = 'block';
+			})
+		})
 	}
 }
 
