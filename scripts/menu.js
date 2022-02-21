@@ -1,6 +1,10 @@
 let members = [];
 
 const actionButton = document.getElementById('action-button');
+const wallpaperButton = document.querySelector('.action-wallpaper');
+const main = document.querySelector('main');
+const wallpaperButtonContainer = document.querySelector('.action-wall');
+const wallpaperButtonText = document.querySelector('.action-wallpaper > div > h4');
 const dbOSLinks = document.querySelectorAll('.menu-icon-1 > .menu-drop > .drop-link');
 const databaseLinks = document.querySelectorAll('.menu-icon-2 > .menu-drop > .drop-link');
 const mySqlLinks = document.querySelectorAll('.menu-icon-3 > .menu-drop > .drop-link');
@@ -13,6 +17,7 @@ class ManageMenu {
 			members.push(document.querySelectorAll(`.menu-icon-${i} > .menu-drop > .drop-link`));
 		}
 		this.manageMain();
+		this.manageActionBar = new ManageActionBar();
 		// this.manageSub();
 		this.helper = new Helper();
 	}
@@ -95,6 +100,25 @@ class ManageMenu {
 	}
 }
 
+class ManageActionBar {
+	constructor() {
+		this.dark = true;
+		wallpaperButton.addEventListener('click', (e) => {
+			if (this.dark) {
+				main.style.backgroundImage = 'url("./../assets/light-mac-bg.jpeg")';
+				wallpaperButtonContainer.style.backgroundImage = `url('./../assets/light-mac-bg.jpeg')`;
+				wallpaperButtonText.textContent = 'Dynamic Light Wallpaper';
+			}
+			else {
+				main.style.backgroundImage = 'url("./../assets/dark-mac-bg.jpeg")';
+				wallpaperButtonContainer.style.backgroundImage = `url('./../assets/dark-mac-bg.jpeg')`;
+				wallpaperButtonText.textContent = 'Dynamic Dark Wallpaper';
+			};
+			this.dark = !this.dark;
+		})
+	}
+}
+
 class NewWinBox {
 	constructor(title = 'dbOS', i = 0) {
 		new WinBox(title, {
@@ -129,3 +153,4 @@ class NewWinBox {
 		});
 	}
 }
+

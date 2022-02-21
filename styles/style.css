@@ -8,6 +8,7 @@ main{
   background: url("./../assets/dark-mac-bg.jpeg") center center no-repeat;
   background-size: cover;
   display: none;
+  transition: background 0.3s ease;
 }
 
 #splash{
@@ -155,12 +156,12 @@ nav .content .links {
   position: relative;
   top: 0;
   right: 190px;
-  padding-top: 6px;
+  padding-top: 4px;
   height: 20px;
   width: 20px;
 }
-#action-button img{
-  height: 25px;
+#action-button svg{
+  height: 17px;
 }
 
 .action-drop{
@@ -244,6 +245,7 @@ nav .content .links {
   width:70px;
   height: 70px;
   background:url('./../assets/dark-mac-bg.jpeg') no-repeat center center;
+  transition: background 0.3s ease;
   background-size: cover;
   border-radius: 10px;
 }
