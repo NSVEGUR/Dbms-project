@@ -23,6 +23,7 @@
 
 .wb-icon * {
 	opacity: 0.65;
+	filter: var(--system-filter);
 }
 
 .wb-icon *:hover {

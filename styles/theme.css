@@ -24,6 +24,7 @@
 	--system-transparent-color-secondary: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-primary-op: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-secondary-op: rgba(255, 255, 255, 0.5);
+	--system-filter: invert(0);
 }
 
 /* For System light-theme */
@@ -35,4 +36,5 @@
 	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);
+	--system-filter: invert(1);
 }
