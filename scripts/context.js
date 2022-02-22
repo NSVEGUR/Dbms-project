@@ -1,4 +1,4 @@
-class ContextMenu {
+export class ContextMenu {
 	constructor() {
 		document.onclick = hideMenu;
 		document.oncontextmenu = rightClick;

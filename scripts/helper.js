@@ -4,7 +4,7 @@ const wallpaperButtonContainer = document.querySelector('.action-wall');
 const wallpaperButtonText = document.querySelector('.action-wallpaper > div > h4');
 const themeGlyph = document.querySelector('.mode-glyph');
 
-class Helper {
+export class Helper {
 	constructor() {
 		this.dark = true;
 		const links = document.querySelectorAll('a');

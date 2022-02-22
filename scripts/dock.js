@@ -1,4 +1,8 @@
-class Dock {
+import { dockWindows } from './window.js';
+
+const dockIcons = document.querySelectorAll('.icon > div');
+
+export class Dock {
 	constructor() {
 		dockIcons.forEach((icon, i) => {
 			icon.addEventListener('click', (e) => {

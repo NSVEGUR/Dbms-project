@@ -13,7 +13,6 @@ const monthList = [
   "Nov",
   "Dec",
 ];
-const helper = new Helper();
 
 function getTime(date) {
   let hours = date.getHours();

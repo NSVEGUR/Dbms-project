@@ -3,6 +3,7 @@
 	border: none;
 	box-shadow: var(--shadow-effect-window);
 	color: white;
+	background: var(--system-primary-color);
 }
 .wb-body {
 	/* the width of window border: */
@@ -12,6 +13,14 @@
 	background: var(--system-primary-color);
 }
 
+.wb-title{
+	text-align: center;
+	font-size:1.2rem;
+	font-weight: 500;
+	padding-top:5px;
+	color: var(--system-text-color);
+}
+
 .wb-icon * {
 	opacity: 0.65;
 }
@@ -19,3 +28,4 @@
 .wb-icon *:hover {
 	opacity: 1;
 }
+

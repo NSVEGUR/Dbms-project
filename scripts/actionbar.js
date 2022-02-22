@@ -1,4 +1,5 @@
-const actionButton = document.getElementById('action-button');
+import { Helper } from './helper.js';
+
 const themeButton = document.querySelector('.action-mode');
 const notchButton = document.querySelector('.action-notch');
 const focusButton = document.querySelector('.action-focus');
@@ -8,8 +9,10 @@ const notch = document.querySelector('.notch');
 const focuS = document.getElementById('focus');
 const colors = document.querySelectorAll('.color');
 const colorCircles = document.querySelectorAll('.color > div');
+const helper = new Helper();
 
-class ActionBar {
+
+export class ActionBar {
 	constructor() {
 		this.notch = false;
 		this.focus = false;

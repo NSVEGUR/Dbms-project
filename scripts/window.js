@@ -1,3 +1,5 @@
+import './winbox.js';
+
 const dockIcons = document.querySelectorAll('.icon > div');
 const dockTitles = [
 	'Database',
@@ -9,11 +11,8 @@ const dockTitles = [
 	'Nagasai',
 ];
 
-let textColor = 'white';
-let focusWindowColor = '#1a1a1d';
-let blurWindowColor = '#1a1a1daf';
 
-class Window {
+export class Window {
 	constructor(title = 'DbOS', i = -1) {
 		this.title = title;
 		this.i = i;
@@ -23,6 +22,9 @@ class Window {
 	open() {
 		this.isOpen = true;
 		this.window = new WinBox(this.title, {
+			class: [
+				"no-full",
+			],
 			x: 50 + 75 * this.i,
 			y: 50 + 25 * this.i,
 			top: 40,
@@ -31,10 +33,6 @@ class Window {
 			left: 10,
 			width: '60%',
 			height: '75%',
-			onfocus: function () {
-				this.setBackground(focusWindowColor);
-				this.body.style.background = focusWindowColor;
-			},
 			onclose: () => {
 				this.isOpen = false;
 				dockIcons.forEach((i) => {
@@ -56,5 +54,4 @@ class Window {
 	}
 }
 
-const dbOS = new Window();
-const dockWindows = dockTitles.map((title, i) => new Window(title, i));
+export const dockWindows = dockTitles.map((title, i) => new Window(title, i));
