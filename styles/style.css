@@ -21,7 +21,7 @@ a{
   cursor: none;
   background: black;
   color: white;
-  font-size:5rem;
+  font-size:7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,9 +110,8 @@ nav .content .links {
   position: relative;
   color: var(--system-text-color);
   padding: 0 10px;
-  padding: 0px 13px;
+  margin-left: 0.7rem;
   border-radius:3px;
-  margin-left: 2px;
 }
 .content .logo a{
   color: var(--system-text-color);
@@ -215,7 +214,7 @@ nav .content .links {
 #action-button{
   position: relative;
   top: 0;
-  right: 190px;
+  right: 175px;
   padding-top: 4px;
   height: 20px;
   width: 20px;
@@ -224,7 +223,7 @@ nav .content .links {
   position: fixed;
   top: 0;
   color: var(--system-text-color); 
-  right: 220px;
+  right: 210px;
   padding-top: 2px;
   height: 20px;
   width: 20px;
@@ -513,6 +512,21 @@ nav .content .links {
     margin-left: -1rem;
   }
 }
+@media screen and (max-width: 658px) {
+  #action-button{
+    right: -6px;
+  }
+  .action-drop{
+    left: auto;
+    right: -15px;
+  }
+  #focus{
+    right: 50px;
+  }
+  #time {
+    display: none;
+  }
+}
 @media screen and (max-width: 460px) {
   .content .links li a {
     font-size: 0.75rem;
@@ -535,16 +549,9 @@ nav .content .links {
     margin: 1px 1px;
   }
 }
-
-@media screen and (max-width: 330px) {
-  #action-button{
-    right: 0px;
-  }
-  #focus{
-    right: 50px;
-  }
-  #time {
-    display: none;
+@media screen and (max-width: 340px) {
+  .action-drop{
+    width: 330px;
   }
 }
 
@@ -668,6 +675,10 @@ nav .content .links {
   .app-icon {
     width: 58px;
   }
+}
+
+.logo .fa-apple{
+  font-size:1.2rem;
 }
 
 @keyframes loading {

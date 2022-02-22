@@ -1,4 +1,3 @@
-`use strict`;
 const daylist = ["Sun", "Mon", "Tue", "Wed ", "Thu", "Fri", "Sat"];
 const monthList = [
   "Jan",
@@ -14,6 +13,7 @@ const monthList = [
   "Nov",
   "Dec",
 ];
+const helper = new Helper();
 
 function getTime(date) {
   let hours = date.getHours();

@@ -1,7 +1,7 @@
 const dockIcons = document.querySelectorAll('.icon > div');
 const dockTitles = [
 	'Database',
-	'MySql',
+	'Sql',
 	'Harsha',
 	'Praveen',
 	'Ravindar',
@@ -34,10 +34,6 @@ class Window {
 			onfocus: function () {
 				this.setBackground(focusWindowColor);
 				this.body.style.background = focusWindowColor;
-			},
-			onblur: function () {
-				this.setBackground(blurWindowColor);
-				this.body.style.background = blurWindowColor;
 			},
 			onclose: () => {
 				this.isOpen = false;

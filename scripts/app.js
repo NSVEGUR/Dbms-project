@@ -1,6 +1,3 @@
-import './date.js';
-import './splash.js';
-
 class App {
 	constructor() {
 		this.dock = new Dock();
