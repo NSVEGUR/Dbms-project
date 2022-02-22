@@ -67,7 +67,7 @@ main{
 .notch{
   position: fixed;
   height: 30px;
-  width: 150px;
+  width: 140px;
   top: 0;
   right: 50%;
   transform: translate(50%);
@@ -76,6 +76,18 @@ main{
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   display: none;
+}
+.notch::after{
+  content:'👻';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  display:none;
+  transition: all 0.3s ease;
+}
+.notch:hover::after{
+  display: block;
 }
 .toggle-notch{
   display:block;
@@ -318,6 +330,9 @@ nav .content .links {
 
 .blue{
   background: #3273ecf3;
+}
+.blue div{
+  display: block;
 }
 .orange{
   background:#ff9d06;
