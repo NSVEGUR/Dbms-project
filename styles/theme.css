@@ -31,7 +31,7 @@
 	--system-primary-color: #fffefe;
 	--system-text-color: black;
 	--system-text-color-op: white;
-	--system-transparent-color-primary: rgba(255, 255, 255, 0.2);
+	--system-transparent-color-primary: rgba(255, 255, 255, 0.5);
 	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);

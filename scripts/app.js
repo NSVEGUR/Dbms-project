@@ -1,13 +1,11 @@
 import './date.js';
 import './splash.js';
 
-
-
-
 class App {
 	constructor() {
 		this.dock = new Dock();
-		this.menu = new ManageMenu();
+		this.menu = new Menu();
+		this.contextMenu = new ContextMenu();
 	}
 }
 

@@ -28,7 +28,7 @@
   <main>
     <div class="notch"></div>
     <audio id="audio" autoplay=true src="./assets/startup-sound.mp3"></audio>
-    <div class="wrapper">
+    <div id="menu">
       <nav>
         <div class="content">
           <div class="logo menu-icons menu-icon-1">
@@ -281,6 +281,16 @@
         <span id="time"> </span>
       </nav>
     </div>
+    <div id="contextMenu" class="contextMenu">
+      <div class="context-link"><a href="">New Database</a></div>
+      <div class="drop-div"></div>
+      <div class="context-link"><a href="">Get Info</a></div>
+      <div class="context-link"><a href="">Change Background</a></div>
+      <div class="drop-div"></div>
+      <div class="stack context-link"><i class="fas fa-check left-glyph"></i><a href="">Use Stacks</a></div>
+      <div class="stack context-link"><i class="fas fa-angle-right right-glyph"></i><a href="">Group Stacks By</a></div>
+      <div class="context-link"><a href="">Show View Options</a></div>
+    </div>
     <div id="dock">
       <div class="dock-container">
         <button class="icon">
@@ -326,6 +336,7 @@
   <script type="text/javascript" src="./scripts/helper.js"></script>
   <script type="text/javascript" src="./scripts/dock.js"></script>
   <script type="text/javascript" src="./scripts/menu.js"></script>
+  <script type="text/javascript" src="./scripts/context.js"></script>
   <script type="module" src="./scripts/app.js"></script>
 </body>
 

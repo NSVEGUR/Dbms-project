@@ -20,7 +20,7 @@ const mySqlLinks = document.querySelectorAll('.menu-icon-3 > .menu-drop > .drop-
 const helpLinks = document.querySelectorAll('.menu-icon-9 > .menu-drop > .drop-link');
 
 
-class ManageMenu {
+class Menu {
 	constructor() {
 		for (let i = 4; i <= 8; i++) {
 			members.push(document.querySelectorAll(`.menu-icon-${i} > .menu-drop > .drop-link`));
