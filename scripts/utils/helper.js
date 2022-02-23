@@ -1,7 +1,7 @@
 const menuIcons = document.querySelectorAll('.menu-icons');
 const main = document.querySelector('main');
-const wallpaperButtonContainer = document.querySelector('.action-wall');
-const wallpaperButtonText = document.querySelector('.action-wallpaper > div > h4');
+// const wallpaperButtonContainer = document.querySelector('.action-wall');
+// const wallpaperButtonText = document.querySelector('.action-wallpaper > div > h4');
 const themeGlyph = document.querySelector('.mode-glyph');
 
 export class Helper {
@@ -39,14 +39,14 @@ export class Helper {
 	switchTheme = (e) => {
 		if (this.dark) {
 			main.style.backgroundImage = 'url("./../assets/light-mac-bg.jpeg")';
-			wallpaperButtonContainer.style.backgroundImage = `url('./../assets/light-mac-bg.jpeg')`;
-			wallpaperButtonText.textContent = 'Dynamic Light Wallpaper';
+			// wallpaperButtonContainer.style.backgroundImage = `url('./../assets/light-mac-bg.jpeg')`;
+			// wallpaperButtonText.textContent = 'Dynamic Light Wallpaper';
 			themeGlyph.style.background = 'var(--system-transparent-color-primary-op)';
 		}
 		else {
 			main.style.backgroundImage = 'url("./../assets/dark-mac-bg.jpeg")';
-			wallpaperButtonContainer.style.backgroundImage = `url('./../assets/dark-mac-bg.jpeg')`;
-			wallpaperButtonText.textContent = 'Dynamic Dark Wallpaper';
+			// wallpaperButtonContainer.style.backgroundImage = `url('./../assets/dark-mac-bg.jpeg')`;
+			// wallpaperButtonText.textContent = 'Dynamic Dark Wallpaper';
 			themeGlyph.style.background = 'var(--system-color)';
 		};
 		document.body.classList.toggle('light-theme');

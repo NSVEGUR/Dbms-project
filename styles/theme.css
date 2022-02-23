@@ -22,6 +22,8 @@
 	--system-transparent-color-secondary: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-primary-op: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-secondary-op: rgba(255, 255, 255, 0.5);
+	--thumb-primary-color: #212a3b;
+	--thumb-secondary-color: #515a68;
 	--system-filter: invert(0);
 }
 
@@ -34,5 +36,7 @@
 	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);
+	--thumb-primary-color:#fefffe;
+	--thumb-secondary-color:#dfe3e7;
 	--system-filter: invert(1);
 }
