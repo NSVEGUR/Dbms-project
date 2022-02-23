@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div id="splash">
+  <section id="splash">
     <div class="splash-logo">
       <i class="fab fa-apple"></i>
     </div>
@@ -23,7 +23,31 @@
         <div class="loading-indicator"></div>
       </div>
     </div>
-  </div>
+  </section>
+  <section id="auth">
+    <div class="auth-container">
+      <div class="profile">
+        <img src="./assets/profile.png" alt="Profile Image" />
+      </div>
+      <h1>Welcome to dbOS</h1>
+      <form class="password">
+        <input placeholder="Enter Password" id="password" type="password" autocomplete="off" />
+        <div>
+          <i class="far fa-arrow-alt-circle-right"></i>
+        </div>
+      </form>
+      <p class="password-clue">Your Password is <span>123</span></p>
+      <p class="touch-id">Touch ID or Enter password</p>
+    </div>
+    <div class="cancel">
+      <div>
+        <i class="far fa-times-circle"></i>
+      </div>
+      <div>
+        Cancel
+      </div>
+    </div>
+  </section>
   <main>
     <div class="notch"></div>
     <audio id="audio" autoplay=true src="./assets/startup-sound.mp3"></audio>
@@ -324,8 +348,12 @@
           </div>
           <span class="dock-line"></span>
           <div class="icon-8">
+            <span>VSCode</span>
+            <img class="app-icon" data-icon="7" src="./assets/icons/vscode.png" />
+          </div>
+          <div class="icon-9">
             <span>Source</span>
-            <img class="app-icon" data-icon="7" src="./assets/icons/github.png" />
+            <img class="app-icon" data-icon="8" src="./assets/icons/github.png" />
           </div>
         </button>
       </div>

@@ -1,5 +1,5 @@
 import { ActionBar } from './actionbar.js';
-import { Helper } from './helper.js';
+import { Helper } from '../utils/helper.js';
 
 
 const menuIcons = document.querySelectorAll('.menu-icons');

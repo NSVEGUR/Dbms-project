@@ -8,7 +8,8 @@
 .wb-body {
 	/* the width of window border: */
 	margin: 1px;
-	border-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	color: white;
 	background: var(--system-primary-color);
 }

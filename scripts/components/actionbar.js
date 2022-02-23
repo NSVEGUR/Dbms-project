@@ -1,4 +1,4 @@
-import { Helper } from './helper.js';
+import { Helper } from '../utils/helper.js';
 
 const themeButton = document.querySelector('.action-mode');
 const notchButton = document.querySelector('.action-notch');
@@ -48,12 +48,12 @@ export class ActionBar {
 	manageSystemColors() {
 		colors.forEach((color) => {
 			color.addEventListener('click', (e) => {
-				const newColor = getComputedStyle(e.target).getPropertyValue('background');
+				const newColor = getComputedStyle(color).getPropertyValue('background');
 				document.documentElement.style.setProperty('--system-color', newColor);
 				colorCircles.forEach((circle) => {
 					circle.style.display = 'none';
 				});
-				e.target.querySelector('div').style.display = 'block';
+				color.querySelector('div').style.display = 'block';
 			})
 		})
 	}

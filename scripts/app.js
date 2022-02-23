@@ -1,8 +1,7 @@
-import './splash.js';
-import './date.js';
-import { Dock } from './dock.js';
-import { Menu } from './menu.js';
-import { ContextMenu } from './context.js';
+import './utils/splash.js';
+import { Dock } from './components/dock.js';
+import { Menu } from './components/menu.js';
+import { ContextMenu } from './components/context.js';
 
 class App {
 	constructor() {

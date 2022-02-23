@@ -1,4 +1,4 @@
-import './winbox.js';
+import '../utils/winbox.js';
 
 const dockIcons = document.querySelectorAll('.icon > div');
 const dockTitles = [
@@ -9,17 +9,18 @@ const dockTitles = [
 	'Ravindar',
 	'Vineeth',
 	'Nagasai',
+	'VSCode',
 ];
 
 
 export class Window {
-	constructor(title = 'DbOS', i = -1) {
-		this.title = title;
-		this.i = i;
+	constructor(props) {
+		this.title = props.title ?? 'dbOS';
+		this.i = props.i ?? -1;
 		this.isOpen = false;
 		this.window = null;
 	}
-	open() {
+	open(data) {
 		this.isOpen = true;
 		this.window = new WinBox(this.title, {
 			class: [
@@ -30,6 +31,8 @@ export class Window {
 			top: 40,
 			right: 10,
 			bottom: 120,
+			url: data?.url || '',
+			html: data?.html || '',
 			left: 10,
 			width: '60%',
 			height: '75%',
@@ -54,4 +57,7 @@ export class Window {
 	}
 }
 
-export const dockWindows = dockTitles.map((title, i) => new Window(title, i));
+export const dockWindows = dockTitles.map((title, i) => new Window({
+	title: title,
+	i: i,
+}));
