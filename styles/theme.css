@@ -20,11 +20,13 @@
 	--system-text-color-op: black;
 	--system-transparent-color-primary: rgba(0, 0, 0, 0.2);
 	--system-transparent-color-secondary: rgba(0, 0, 0, 0.3);
+	--system-transparent-color-window: rgba(0, 0, 0, 0.4);
 	--system-transparent-color-primary-op: rgba(255, 255, 255, 0.3);
 	--system-transparent-color-secondary-op: rgba(255, 255, 255, 0.5);
 	--thumb-primary-color: #212a3b;
 	--thumb-secondary-color: #515a68;
 	--system-filter: invert(0);
+	--system-thumb: #9c9c9f;
 }
 
 /* For System light-theme */
@@ -34,9 +36,11 @@
 	--system-text-color-op: white;
 	--system-transparent-color-primary: rgba(255, 255, 255, 0.5);
 	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
+	--system-transparent-color-window: rgba(255, 255, 255, 0.4);
 	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
 	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);
 	--thumb-primary-color:#fefffe;
 	--thumb-secondary-color:#dfe3e7;
 	--system-filter: invert(1);
+	--system-thumb: #535353;
 }

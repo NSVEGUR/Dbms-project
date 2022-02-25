@@ -1,697 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/icons/finder.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="prefetch" href="./assets/dark-mac-bg.jpeg" />
-    <link rel="prefetch" href="./assets/light-mac-bg.jpeg" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-    ></script>
-    <title>dbOS</title>
-  </head>
 
-  <body>
-    <section id="splash">
-      <div class="splash-logo">
-        <i class="fab fa-apple"></i>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/icons/finder.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="prefetch" href="./assets/dark-mac-bg.jpeg" />
+  <link rel="prefetch" href="./assets/light-mac-bg.jpeg" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>dbOS</title>
+</head>
+
+<body>
+  <section id="splash">
+    <div class="splash-logo">
+      <i class="fab fa-apple"></i>
+    </div>
+    <div class="loading-container">
+      <div class="loading-bar">
+        <div class="loading-indicator"></div>
       </div>
-      <div class="loading-container">
-        <div class="loading-bar">
-          <div class="loading-indicator"></div>
-        </div>
+    </div>
+  </section>
+  <section id="auth">
+    <div class="auth-container">
+      <div class="profile">
+        <img src="./assets/profile.png" alt="Profile Image" />
       </div>
-    </section>
-    <section id="auth">
-      <div class="auth-container">
-        <div class="profile">
-          <img src="./assets/profile.png" alt="Profile Image" />
-        </div>
-        <h1>Welcome to dbOS</h1>
-        <form class="password">
-          <input
-            placeholder="Enter Password"
-            id="password"
-            type="password"
-            autocomplete="off"
-          />
-          <div>
-            <i class="far fa-arrow-alt-circle-right"></i>
-          </div>
-        </form>
-        <p class="password-clue">Your Password is <span>123</span></p>
-        <p class="touch-id">Touch ID or Enter password</p>
-      </div>
-      <div class="cancel">
+      <h1>Welcome to dbOS</h1>
+      <form class="password">
+        <input placeholder="Enter Password" id="password" type="password" autocomplete="off" />
         <div>
-          <i class="far fa-times-circle"></i>
+          <i class="far fa-arrow-alt-circle-right"></i>
         </div>
-        <div>Cancel</div>
+      </form>
+      <p class="password-clue">Your Password is <span>123</span></p>
+      <p class="touch-id">Touch ID or Enter password</p>
+    </div>
+    <div class="cancel">
+      <div>
+        <i class="far fa-times-circle"></i>
       </div>
-    </section>
-    <section>
-      <div id="backstore" style="display: none">
-        <div id="database">
-          <div class="DBMS">
-            <h1>DBMS</h1>
-            <p>
-              A database management system (DBMS) is the software that interacts
-              with end users, applications, and the database itself to capture
-              and analyze the data. The DBMS software additionally encompasses
-              the core facilities provided to administer the database. The sum
-              total of the database, the DBMS and the associated applications
-              can be referred to as a database system. Often the term "database"
-              is also used loosely to refer to any of the DBMS, the database
-              system or an application associated with the database.
-            </p>
-            <h2>History</h2>
-            <p>
-              The sizes, capabilities, and performance of databases and their
-              respective DBMSs have grown in orders of magnitude. These
-              performance increases were enabled by the technology progress in
-              the areas of processors, computer memory, computer storage, and
-              computer networks. The concept of a database was made possible by
-              the emergence of direct access storage media such as magnetic
-              disks, which became widely available in the mid 1960s; earlier
-              systems relied on sequential storage of data on magnetic tape. The
-              subsequent development of database technology can be divided into
-              three eras based on data model or structure: navigational,[8]
-              SQL/relational, and post-relational.
-            </p>
-            <h2>Navigational DBMS</h2>
-            <p>
-              <img
-                src="assets/images/Charles.png"
-                alt="Charles Bachman pic"
-                class="profile-pic"
-              />
-              The introduction of the term database coincided with the
-              availability of direct-access storage (disks and drums) from the
-              mid-1960s onwards. Navigational DBMS was proposed by
-              <strong>Charles Bachman</strong>. In 1971, the Database Task Group
-              delivered their standard, which generally became known as the
-              CODASYL approach, and soon a number of commercial products based
-              on this approach entered the market.The CODASYL approach offered
-              applications the ability to navigate around a linked data set
-              which was formed into a large network. Applications could find
-              records by one of three methods:
-            </p>
-            <ol type="1">
-              <li>
-                Use of a primary key (known as a CALC key, typically implemented
-                by hashing)
-              </li>
-              <li>
-                Navigating relationships (called sets) from one record to
-                another
-              </li>
-              <li>Scanning all the records in a sequential order</li>
-            </ol>
-            <h2>Relational DBMS</h2>
-            <p>
-              <img
-                src="assets/images/edgar.png"
-                alt="Edgar F. Codd pic"
-                class="profile-pic"
-              />
-              Edgar F. Codd worked at IBM in San Jose, California, in one of
-              their offshoot offices that was primarily involved in the
-              development of hard disk systems. He was unhappy with the
-              navigational model of the CODASYL approach, notably the lack of a
-              "search" facility. In 1970, he wrote a number of papers that
-              outlined a new approach to database construction that eventually
-              culminated in the groundbreaking A Relational Model of Data for
-              Large Shared Data Banks.
-            </p>
-            <p>
-              In this paper, he described a new system for storing and working
-              with large databases. Instead of records being stored in some sort
-              of linked list of free-form records as in CODASYL, Codd's idea was
-              to organize the data as a number of "tables", each table being
-              used for a different type of entity. Each table would contain a
-              fixed number of columns containing the attributes of the entity.
-              One or more columns of each table were designated as a primary key
-              by which the rows of the table could be uniquely identified;
-              cross-references between tables always used these primary keys,
-              rather than disk addresses, and queries would join tables based on
-              these key relationships, using a set of operations based on the
-              mathematical system of relational calculus (from which the model
-              takes its name). Splitting the data into a set of normalized
-              tables (or relations) aimed to ensure that each "fact" was only
-              stored once, thus simplifying update operations. Virtual tables
-              called views could present the data in different ways for
-              different users, but views could not be directly updated.
-            </p>
-            <h2>SQL DBMS</h2>
-            <p>
-              IBM started working on a prototype system loosely based on Codd's
-              concepts as System R in the early 1970s. The first version was
-              ready in 1974/5, and work then started on multi-table systems in
-              which the data could be split so that all of the data for a record
-              (some of which is optional) did not have to be stored in a single
-              large "chunk". Subsequent multi-user versions were tested by
-              customers in 1978 and 1979, by which time a standardized query
-              language SQL had been added. Codd's ideas were establishing
-              themselves as both workable and superior to CODASYL, pushing IBM
-              to develop a true production version of System R, known as SQL/DS,
-              and, later, Database 2
-            </p>
-            <h2>NoSQL and NewSQL</h2>
-            <p>
-              XML databases are a type of structured document-oriented database
-              that allows querying based on XML document attributes. XML
-              databases are mostly used in applications where the data is
-              conveniently viewed as a collection of documents, with a structure
-              that can vary from the very flexible to the highly rigid: examples
-              include scientific articles, patents, tax filings, and personnel
-              records.
-            </p>
-            <p>
-              NoSQL databases are often very fast, do not require fixed table
-              schemas, avoid join operations by storing denormalized data, and
-              are designed to scale horizontally.
-            </p>
-            <p>
-              NewSQL is a class of modern relational databases that aims to
-              provide the same scalable performance of NoSQL systems for online
-              transaction processing (read-write) workloads while still using
-              SQL and maintaining the ACID guarantees of a traditional database
-              system.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="backstore" style="display: none">
-        <div id="sql">
-          <div class="DBMS">
-            <h1>SQL</h1>
-            <p>
-              SQL is a domain-specific language used in programming and designed
-              for managing data held in a relational database management system
-              (RDBMS), or for stream processing in a relational data stream
-              management system (RDSMS). It is particularly useful in handling
-              structured data, i.e. data incorporating relations among entities
-              and variables. SQL offers two main advantages over older
-              read-write APIs such as ISAM or VSAM. Firstly, it introduced the
-              concept of accessing many records with one single command.
-              Secondly, it eliminates the need to specify how to reach a record,
-              e.g. with or without an index.
-            </p>
-            <h2>History</h2>
-            <p>
-              <img
-                src="assets/images/donald.png"
-                alt="Donald D.Chamberlin pic"
-                class="profile-pic"
-              />
-              SQL was initially developed at IBM by Donald D. Chamberlin and
-              Raymond F. Boyce after learning about the relational model from
-              Edgar F. Codd in the early 1970s. This version, initially called
-              SEQUEL (Structured English Query Language), was designed to
-              manipulate and retrieve data stored in IBM's original
-              quasirelational database management system, System R, which a
-              group at IBM San Jose Research Laboratory had developed during the
-              1970s. After testing SQL at customer test sites to determine the
-              usefulness and practicality of the system, IBM began developing
-              commercial products based on their System R prototype, including
-              System/38, SQL/DS, and DB2, which were commercially available in
-              1979, 1981, and 1983, respectively.
-            </p>
-            <p>
-              In the late 1970s, Relational Software, Inc. (now Oracle
-              Corporation) saw the potential of the concepts described by Codd,
-              Chamberlin, and Boyce, and developed their own SQL-based RDBMS
-              with aspirations of selling it to the U.S. Navy, Central
-              Intelligence Agency, and other U.S. government agencies. In June
-              1979, Relational Software introduced one of the first commercially
-              available implementations of SQL, Oracle V2 (Version2) for VAX
-              computers
-            </p>
-          </div>
+      <div>Cancel</div>
+    </div>
+  </section>
+  <section id="windows">
+    <div id="backstore" style="display: none">
+      <div id="database">
+        <div class="DBMS">
+          <h1>DBMS</h1>
+          <p>
+            A database management system (DBMS) is the software that interacts
+            with end users, applications, and the database itself to capture
+            and analyze the data. The DBMS software additionally encompasses
+            the core facilities provided to administer the database. The sum
+            total of the database, the DBMS and the associated applications
+            can be referred to as a database system. Often the term "database"
+            is also used loosely to refer to any of the DBMS, the database
+            system or an application associated with the database.
+          </p>
+          <h2>History</h2>
+          <p>
+            The sizes, capabilities, and performance of databases and their
+            respective DBMSs have grown in orders of magnitude. These
+            performance increases were enabled by the technology progress in
+            the areas of processors, computer memory, computer storage, and
+            computer networks. The concept of a database was made possible by
+            the emergence of direct access storage media such as magnetic
+            disks, which became widely available in the mid 1960s; earlier
+            systems relied on sequential storage of data on magnetic tape. The
+            subsequent development of database technology can be divided into
+            three eras based on data model or structure: navigational,[8]
+            SQL/relational, and post-relational.
+          </p>
+          <h2>Navigational DBMS</h2>
+          <p>
+            <img src="assets/images/Charles.png" alt="Charles Bachman pic" class="profile-pic" />
+            The introduction of the term database coincided with the
+            availability of direct-access storage (disks and drums) from the
+            mid-1960s onwards. Navigational DBMS was proposed by
+            <strong>Charles Bachman</strong>. In 1971, the Database Task Group
+            delivered their standard, which generally became known as the
+            CODASYL approach, and soon a number of commercial products based
+            on this approach entered the market.The CODASYL approach offered
+            applications the ability to navigate around a linked data set
+            which was formed into a large network. Applications could find
+            records by one of three methods:
+          </p>
+          <ol type="1">
+            <li>
+              Use of a primary key (known as a CALC key, typically implemented
+              by hashing)
+            </li>
+            <li>
+              Navigating relationships (called sets) from one record to
+              another
+            </li>
+            <li>Scanning all the records in a sequential order</li>
+          </ol>
+          <h2>Relational DBMS</h2>
+          <p>
+            <img src="assets/images/edgar.png" alt="Edgar F. Codd pic" class="profile-pic" />
+            Edgar F. Codd worked at IBM in San Jose, California, in one of
+            their offshoot offices that was primarily involved in the
+            development of hard disk systems. He was unhappy with the
+            navigational model of the CODASYL approach, notably the lack of a
+            "search" facility. In 1970, he wrote a number of papers that
+            outlined a new approach to database construction that eventually
+            culminated in the groundbreaking A Relational Model of Data for
+            Large Shared Data Banks.
+          </p>
+          <p>
+            In this paper, he described a new system for storing and working
+            with large databases. Instead of records being stored in some sort
+            of linked list of free-form records as in CODASYL, Codd's idea was
+            to organize the data as a number of "tables", each table being
+            used for a different type of entity. Each table would contain a
+            fixed number of columns containing the attributes of the entity.
+            One or more columns of each table were designated as a primary key
+            by which the rows of the table could be uniquely identified;
+            cross-references between tables always used these primary keys,
+            rather than disk addresses, and queries would join tables based on
+            these key relationships, using a set of operations based on the
+            mathematical system of relational calculus (from which the model
+            takes its name). Splitting the data into a set of normalized
+            tables (or relations) aimed to ensure that each "fact" was only
+            stored once, thus simplifying update operations. Virtual tables
+            called views could present the data in different ways for
+            different users, but views could not be directly updated.
+          </p>
+          <h2>SQL DBMS</h2>
+          <p>
+            IBM started working on a prototype system loosely based on Codd's
+            concepts as System R in the early 1970s. The first version was
+            ready in 1974/5, and work then started on multi-table systems in
+            which the data could be split so that all of the data for a record
+            (some of which is optional) did not have to be stored in a single
+            large "chunk". Subsequent multi-user versions were tested by
+            customers in 1978 and 1979, by which time a standardized query
+            language SQL had been added. Codd's ideas were establishing
+            themselves as both workable and superior to CODASYL, pushing IBM
+            to develop a true production version of System R, known as SQL/DS,
+            and, later, Database 2
+          </p>
+          <h2>NoSQL and NewSQL</h2>
+          <p>
+            XML databases are a type of structured document-oriented database
+            that allows querying based on XML document attributes. XML
+            databases are mostly used in applications where the data is
+            conveniently viewed as a collection of documents, with a structure
+            that can vary from the very flexible to the highly rigid: examples
+            include scientific articles, patents, tax filings, and personnel
+            records.
+          </p>
+          <p>
+            NoSQL databases are often very fast, do not require fixed table
+            schemas, avoid join operations by storing denormalized data, and
+            are designed to scale horizontally.
+          </p>
+          <p>
+            NewSQL is a class of modern relational databases that aims to
+            provide the same scalable performance of NoSQL systems for online
+            transaction processing (read-write) workloads while still using
+            SQL and maintaining the ACID guarantees of a traditional database
+            system.
+          </p>
         </div>
       </div>
-      <div id="backstore" style="display: none">
-        <div id="Harsha">
-          <div class="flex-container-data">
-            <div class="flex-container-data-1">
-              <div class="flex-container-data-1-top pseudo-border">
-                <a href="https://harsha662002.github.io/Personal_Portfolio/"
-                  >Website</a
-                >
-                <p>About</p>
-              </div>
-              <div class="flex-container-data-1-bottom">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/harsha-vasireddy-9a12671ba/"
-                      >LinkedIn</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://github.com/Harsha662002">Github</a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://harsha662002.github.io/Personal_Portfolio/#contact"
-                      >Contact me</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-container-data-2">
-              <img
-                src="assets/images/harsha.png"
-                alt="harsha pic"
-                class="profile-pic"
-              />
-              <h2>Harsha Vasireddy</h2>
-              <p>
-                I am 2nd year Computer Science at IIITDM Kancheepuram.I am
-                beginner in webdev with just 1 year experience and just want to
-                go deep down into it.I have been in front-end webdev and hungry
-                to learn backend also.
-              </p>
-              <p>
-                It's just not been webdev, my other interests lie in competitive
-                programming as well as I have been attempting quite a few
-                contests.
-              </p>
-              <p>
-                My non-academic stuff basically include my love for
-                cricket,kabaddi and movies.I have even the background of
-                baseball and was also a part of my school team.
-              </p>
-            </div>
-          </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="sql">
+        <div class="DBMS">
+          <h1>SQL</h1>
+          <p>
+            SQL is a domain-specific language used in programming and designed
+            for managing data held in a relational database management system
+            (RDBMS), or for stream processing in a relational data stream
+            management system (RDSMS). It is particularly useful in handling
+            structured data, i.e. data incorporating relations among entities
+            and variables. SQL offers two main advantages over older
+            read-write APIs such as ISAM or VSAM. Firstly, it introduced the
+            concept of accessing many records with one single command.
+            Secondly, it eliminates the need to specify how to reach a record,
+            e.g. with or without an index.
+          </p>
+          <h2>History</h2>
+          <p>
+            <img src="assets/images/donald.png" alt="Donald D.Chamberlin pic" class="profile-pic" />
+            SQL was initially developed at IBM by Donald D. Chamberlin and
+            Raymond F. Boyce after learning about the relational model from
+            Edgar F. Codd in the early 1970s. This version, initially called
+            SEQUEL (Structured English Query Language), was designed to
+            manipulate and retrieve data stored in IBM's original
+            quasirelational database management system, System R, which a
+            group at IBM San Jose Research Laboratory had developed during the
+            1970s. After testing SQL at customer test sites to determine the
+            usefulness and practicality of the system, IBM began developing
+            commercial products based on their System R prototype, including
+            System/38, SQL/DS, and DB2, which were commercially available in
+            1979, 1981, and 1983, respectively.
+          </p>
+          <p>
+            In the late 1970s, Relational Software, Inc. (now Oracle
+            Corporation) saw the potential of the concepts described by Codd,
+            Chamberlin, and Boyce, and developed their own SQL-based RDBMS
+            with aspirations of selling it to the U.S. Navy, Central
+            Intelligence Agency, and other U.S. government agencies. In June
+            1979, Relational Software introduced one of the first commercially
+            available implementations of SQL, Oracle V2 (Version2) for VAX
+            computers
+          </p>
         </div>
       </div>
-      <div id="backstore" style="display: none">
-        <div id="Praveen">
-          <div class="flex-container-data">
-            <div class="flex-container-data-1">
-              <div class="flex-container-data-1-top pseudo-border">
-                <a href="https://praveen-prav.github.io/Praveen/">Website</a>
-                <p>About</p>
-              </div>
-              <div class="flex-container-data-1-bottom">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/praveen-pravee-594521194"
-                      >LinkedIn</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://github.com/praveen-prav">Github</a>
-                  </li>
-                  <li>
-                    <a href="https://praveen-prav.github.io/Praveen/#contact"
-                      >Contact me</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-container-data-2">
-              <img
-                src="assets/images/praveen.png"
-                alt="Praveen pic"
-                class="profile-pic"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="backstore" style="display: none">
-        <div id="Ravindar">
-          <div class="flex-container-data">
-            <div class="flex-container-data-1">
-              <div class="flex-container-data-1-top pseudo-border">
-                <a href="https://ravindar832.github.io/Blog/">Website</a>
-                <p>About</p>
-              </div>
-              <div class="flex-container-data-1-bottom">
-                <ul>
-                  <li>
-                    <a
-                      href="http://linkedin.com/in/gugulothu-ravindar-85683a232"
-                      >LinkedIn</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://github.com/Ravindar832">Github</a>
-                  </li>
-                  <li>
-                    <a href="https://ravindar832.github.io/Blog/">Contact me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-container-data-2">
-              <img
-                src="assets/images/ravinder.png"
-                alt="Ravindar pic"
-                class="profile-pic"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="backstore" style="display: none">
-        <div id="Vineeth">
-          <div class="flex-container-data">
-            <div class="flex-container-data-1">
-              <div class="flex-container-data-1-top pseudo-border">
-                <a href="">Website</a>
-                <p>About</p>
-              </div>
-              <div class="flex-container-data-1-bottom">
-                <ul>
-                  <li>
-                    <a href="">LinkedIn</a>
-                  </li>
-                  <li>
-                    <a href="">Github</a>
-                  </li>
-                  <li>
-                    <a href="">Contact me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-container-data-2">
-              <img
-                src="assets/images/vineeth.png"
-                alt="Vineeth pic"
-                class="profile-pic"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="backstore" style="display: none">
-        <div id="Nagasai">
-          <div class="flex-container-data">
-            <div class="flex-container-data-1">
-              <div class="flex-container-data-1-top pseudo-border">
-                <a href="https://nsvegur.github.io/Blog">Website</a>
-                <p>About</p>
-              </div>
-              <div class="flex-container-data-1-bottom">
-                <ul>
-                  <li>
-                    <a href="https://www.linkedin.com/in/nagasai-v-93b84921b"
-                      >LinkedIn</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://github.com/NSVEGUR">Github</a>
-                  </li>
-                  <li>
-                    <a href="https://nsvegur.github.io/Blog/">Contact me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-container-data-2">
-              <img
-                src="assets/images/nagasai.png"
-                alt="nagasai pic"
-                class="profile-pic"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <main>
-      <!-- <div class="notch"></div> -->
-      <audio
-        id="audio"
-        autoplay="true"
-        src="./assets/startup-sound.mp3"
-      ></audio>
-      <div id="menu">
-        <nav>
-          <div class="content">
-            <div class="logo menu-icons menu-icon-1">
-              <a href="" class="logo-link"> <i class="fab fa-apple"></i></a>
-              <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">About dbOS</a>
-                </div>
-                <div class="drop-div"></div>
-                <div class="drop-link">
-                  <a href="">System Preferences...</a>
-                </div>
-                <div class="drop-link"><a href="">App Store...</a></div>
-                <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Recent Items</a></div>
-                <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Force Quit</a></div>
-                <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Sleep</a></div>
-                <div class="drop-link"><a href="">Restart...</a></div>
-                <div class="drop-link"><a href="">Shutdown...</a></div>
-                <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Lock Screen</a></div>
-                <div class="drop-link"><a href="">Log Out User...</a></div>
-              </div>
-            </div>
-            <ul class="links">
-              <li class="menu-icons menu-icon-2">
-                <a href="">Database</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">About Database</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Open</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Database</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-3">
-                <a href="">Sql</a>
-                <div class="menu-drop">
-                  <div class="drop-link"><a href="">New Sql File</a></div>
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open</a>
-                  </div>
-                  <div><a href="" class="not-active">Close Window</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Get Info</a></div>
-                  <div><a href="" class="not-active">Rename</a></div>
-                  <div class="drop-div"></div>
-                  <div><a href="" class="not-active">Compress</a></div>
-                  <div class="drop-div"></div>
-                  <div><a href="" class="not-active">Duplicate</a></div>
-                  <div><a href="" class="not-active">Make Alias</a></div>
-                  <div><a href="" class="not-active">Quick Look</a></div>
-                  <div><a href="" class="not-active">Show Original</a></div>
-                  <div><a href="" class="not-active">Add to Sidebar</a></div>
-                  <div class="drop-div"></div>
-                  <div><a href="" class="not-active">Move to trash</a></div>
-                  <div><a href="" class="not-active">Eject</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Find</a></div>
-                  <div class="drop-div"></div>
-                  <div><a href="" class="not-active">Tags..</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-4">
-                <a href="">Harsha</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open Harsha</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Github</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Twitter</a></div>
-                  <div class="drop-link"><a href="">Instagram</a></div>
-                  <div><a href="" class="not-active">Mail</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Harsha</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-5">
-                <a href="">Praveen</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open Praveen</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Github</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Twitter</a></div>
-                  <div class="drop-link"><a href="">Instagram</a></div>
-                  <div><a href="" class="not-active">Mail</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Praveen</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-6">
-                <a href="">Ravindar</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open Ravindar</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Github</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Twitter</a></div>
-                  <div class="drop-link"><a href="">Instagram</a></div>
-                  <div><a href="" class="not-active">Mail</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Ravindar</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-7">
-                <a href="">Vineeth</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open Vineeth</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Github</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Twitter</a></div>
-                  <div class="drop-link"><a href="">Instagram</a></div>
-                  <div><a href="" class="not-active">Mail</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Praveen</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-8">
-                <a href="">Nagasai</a>
-                <div class="menu-drop">
-                  <div class="drop-link" data-open="about">
-                    <a href="">Open Nagasai</a>
-                  </div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Github</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Twitter</a></div>
-                  <div class="drop-link"><a href="">Instagram</a></div>
-                  <div><a href="" class="not-active">Mail</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link"><a href="">Hide Nagasai</a></div>
-                  <div class="drop-link"><a href="">Hide Others</a></div>
-                  <div><a href="" class="not-active">Show All</a></div>
-                </div>
-              </li>
-              <li class="menu-icons menu-icon-9">
-                <a href="">Help</a>
-                <div class="menu-drop">
-                  <div class="drop-link"><a href="">Give Feedback</a></div>
-                  <div class="drop-div"></div>
-                  <div class="drop-link" data-open="about">
-                    <a href="">dbOS Help</a>
-                  </div>
-                </div>
-              </li>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Harsha">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>About</span>
+                </li>
+              </a>
+              <a href="https://harsha662002.github.io/Personal_Portfolio/" target="_blank">
+                <li>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Website</span>
+                </li>
+              </a>
+              <a href="https://github.com/Harsha662002" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                  <span>github</span>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/harsha-vasireddy-9a12671ba/" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </li>
+              </a>
             </ul>
           </div>
-          <div id="focus">
-            <i class="fas fa-moon"></i>
+          <div class="flex-container-data-2">
+            <img src="assets/images/harsha.png" alt="harsha pic" class="profile-pic" />
+            <h2>Hi I'm Harsha Vasireddy</h2>
+            <p>
+              I am 2nd year Computer Science at IIITDM Kancheepuram.I am
+              beginner in webdev with just 1 year experience and just want to
+              go deep down into it.I have been in front-end webdev and hungry
+              to learn backend also.
+            </p>
+            <p>
+              It's just not been webdev, my other interests lie in competitive
+              programming as well as I have been attempting quite a few
+              contests.
+            </p>
+            <p>
+              My non-academic stuff basically include my love for
+              cricket,kabaddi and movies.I have even the background of
+              baseball and was also a part of my school team.
+            </p>
           </div>
-          <div id="action-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351 348">
-              <path
-                stroke="black"
-                d="M87.75 46.2c9.31 0 18.237 3.245 24.819 9.021 6.583 5.776 10.281 13.61 10.281 21.779s-3.698 16.003-10.281 21.779c-6.582 5.776-15.51 9.021-24.819 9.021-9.31 0-18.237-3.245-24.82-9.021C56.349 93.003 52.65 85.169 52.65 77s3.698-16.003 10.28-21.779c6.583-5.776 15.51-9.021 24.82-9.021zM263.25 0c23.273 0 45.592 8.112 62.049 22.553C341.755 36.993 351 56.578 351 77c0 20.422-9.245 40.007-25.701 54.447C308.842 145.888 286.523 154 263.25 154H87.75c-23.273 0-45.592-8.112-62.049-22.553C9.245 117.007 0 97.422 0 77c0-20.422 9.245-40.007 25.701-54.447C42.158 8.113 64.477 0 87.75 0h175.5zM87.75 30.8c-13.964 0-27.355 4.867-37.23 13.532C40.648 52.996 35.1 64.747 35.1 77s5.547 24.004 15.42 32.668c9.875 8.665 23.266 13.532 37.23 13.532h175.5c13.964 0 27.355-4.867 37.229-13.532C310.353 101.004 315.9 89.253 315.9 77s-5.547-24.004-15.421-32.668C290.605 35.667 277.214 30.8 263.25 30.8H87.75zM263.25 194H87.75c-23.273 0-45.592 8.112-62.049 22.553C9.245 230.993 0 250.578 0 271c0 20.422 9.245 40.007 25.701 54.447C42.158 339.888 64.477 348 87.75 348h175.5c23.273 0 45.592-8.112 62.049-22.553C341.755 311.007 351 291.422 351 271c0-20.422-9.245-40.007-25.701-54.447C308.842 202.112 286.523 194 263.25 194v0zm0 123.2c-13.964 0-27.355-4.867-37.229-13.532-9.874-8.664-15.421-20.415-15.421-32.668s5.547-24.004 15.421-32.668c9.874-8.665 23.265-13.532 37.229-13.532 13.964 0 27.355 4.867 37.229 13.532 9.874 8.664 15.421 20.415 15.421 32.668s-5.547 24.004-15.421 32.668c-9.874 8.665-23.265 13.532-37.229 13.532z"
-              />
-            </svg>
-            <div class="action-drop">
-              <div class="action-theme">
-                <div class="action-mode">
-                  <div class="mode-glyph">
-                    <i class="fas fa-adjust"></i>
-                  </div>
-                  <div>Dark mode</div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Praveen">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>About</span>
+                </li>
+              </a>
+              <a href="https://praveen-prav.github.io/Praveen/" target="_blank">
+                <li>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Website</span>
+                </li>
+              </a>
+              <a href="https://github.com/praveen-prav" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                  <span>github</span>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/praveen-pravee-594521194" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/praveen.png" alt="harsha pic" class="profile-pic" />
+            <h2>Hi I'm Praveen</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Ravindar">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>About</span>
+                </li>
+              </a>
+              <a href="https://ravindar832.github.io/Blog/" target="_blank">
+                <li>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Website</span>
+                </li>
+              </a>
+              <a href="https://github.com/Ravindar832" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                  <span>github</span>
+                </li>
+              </a>
+              <a href="http://linkedin.com/in/gugulothu-ravindar-85683a232" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/ravinder.png" alt="harsha pic" class="profile-pic" />
+            <h2>Hi I'm Ravindar</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Vineeth">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>About</span>
+                </li>
+              </a>
+              <a href="https://vineethchabala.github.io/VineethChabalaPortfolio/" target="_blank">
+                <li>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Website</span>
+                </li>
+              </a>
+              <a href="https://github.com/VineethChabala" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                  <span>github</span>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/vineeth-chabala-86b077213/" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/vineeth.png" alt="harsha pic" class="profile-pic" />
+            <h2>Hi I'm Vineeth</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Nagasai">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>About</span>
+                </li>
+              </a>
+              <a href="https://nsvegur.github.io/Blog" target="_blank">
+                <li>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Website</span>
+                </li>
+              </a>
+              <a href="https://github.com/NSVEGUR" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                  <span>github</span>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/nagasai-v-93b84921b" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/nagasai.png" alt="harsha pic" class="profile-pic" />
+            <h2>Hi I'm Nagasai Vegur</h2>
+            <p>
+              I am a Developer, Designer and Coding enthusiast. OFC I am a beginner in dev 😅. I am passionate about
+              Data Science, Web Dev, App Dev and
+              Problem solving.
+              I wanna learn something new, and enjoy trying out new technologies. Find my works in my gitty 😺.
+            </p>
+            <p>
+              Present I am studying in 2nd year CSE in IIITDM Kancheepuram. Even got a quite experience in app
+              development👨🏻‍💻 and game development. Life is not only about dev, I love watching movies, listening
+              songs and
+              playing cricket.
+              Perfect🎧 which is my fav available in this dbOS playlist. Go check it out.
+            </p>
+            <p>
+              I love to paint in frontend, respond in backend, script in types, build in apps and what not still
+              learning many more things. (NVM I don't no much about them just learning things 👻)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <!-- <div class="notch"></div> -->
+    <audio id="audio" autoplay="true" src="./assets/startup-sound.mp3"></audio>
+    <div id="menu">
+      <nav>
+        <div class="content">
+          <div class="logo menu-icons menu-icon-1">
+            <a href="" class="logo-link"> <i class="fab fa-apple"></i></a>
+            <div class="menu-drop">
+              <div class="drop-link" data-open="about">
+                <a href="">About dbOS</a>
+              </div>
+              <div class="drop-div"></div>
+              <div class="drop-link">
+                <a href="">System Preferences...</a>
+              </div>
+              <div class="drop-link"><a href="">App Store...</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="">Recent Items</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="">Force Quit</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="">Sleep</a></div>
+              <div class="drop-link"><a href="">Restart...</a></div>
+              <div class="drop-link"><a href="">Shutdown...</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="">Lock Screen</a></div>
+              <div class="drop-link"><a href="">Log Out User...</a></div>
+            </div>
+          </div>
+          <ul class="links">
+            <li class="menu-icons menu-icon-2">
+              <a href="">Database</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">About Database</a>
                 </div>
-                <div class="action-focus">
-                  <div class="focus-glyph">
-                    <i class="fas fa-moon"></i>
-                  </div>
-                  <div>Focus</div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Open</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Database</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-3">
+              <a href="">Sql</a>
+              <div class="menu-drop">
+                <div class="drop-link"><a href="">New Sql File</a></div>
+                <div class="drop-link" data-open="about">
+                  <a href="">Open</a>
+                </div>
+                <div><a href="" class="not-active">Close Window</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Get Info</a></div>
+                <div><a href="" class="not-active">Rename</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Compress</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Duplicate</a></div>
+                <div><a href="" class="not-active">Make Alias</a></div>
+                <div><a href="" class="not-active">Quick Look</a></div>
+                <div><a href="" class="not-active">Show Original</a></div>
+                <div><a href="" class="not-active">Add to Sidebar</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Move to trash</a></div>
+                <div><a href="" class="not-active">Eject</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Find</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Tags..</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-4">
+              <a href="">Harsha</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">Open Harsha</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Twitter</a></div>
+                <div class="drop-link"><a href="">Instagram</a></div>
+                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Harsha</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-5">
+              <a href="">Praveen</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">Open Praveen</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Twitter</a></div>
+                <div class="drop-link"><a href="">Instagram</a></div>
+                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Praveen</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-6">
+              <a href="">Ravindar</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">Open Ravindar</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Twitter</a></div>
+                <div class="drop-link"><a href="">Instagram</a></div>
+                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Ravindar</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-7">
+              <a href="">Vineeth</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">Open Vineeth</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Twitter</a></div>
+                <div class="drop-link"><a href="">Instagram</a></div>
+                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Praveen</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-8">
+              <a href="">Nagasai</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about">
+                  <a href="">Open Nagasai</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Twitter</a></div>
+                <div class="drop-link"><a href="">Instagram</a></div>
+                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="">Hide Nagasai</a></div>
+                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Show All</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-9">
+              <a href="">Help</a>
+              <div class="menu-drop">
+                <div class="drop-link"><a href="">Give Feedback</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link" data-open="about">
+                  <a href="">dbOS Help</a>
                 </div>
               </div>
-              <div class="action-color">
-                <h3>System Color</h3>
-                <div class="action-colors">
-                  <div class="orange-div color-div">
-                    <div class="orange color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+            </li>
+          </ul>
+        </div>
+        <div id="focus">
+          <i class="fas fa-moon"></i>
+        </div>
+        <div id="action-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351 348">
+            <path stroke="black"
+              d="M87.75 46.2c9.31 0 18.237 3.245 24.819 9.021 6.583 5.776 10.281 13.61 10.281 21.779s-3.698 16.003-10.281 21.779c-6.582 5.776-15.51 9.021-24.819 9.021-9.31 0-18.237-3.245-24.82-9.021C56.349 93.003 52.65 85.169 52.65 77s3.698-16.003 10.28-21.779c6.583-5.776 15.51-9.021 24.82-9.021zM263.25 0c23.273 0 45.592 8.112 62.049 22.553C341.755 36.993 351 56.578 351 77c0 20.422-9.245 40.007-25.701 54.447C308.842 145.888 286.523 154 263.25 154H87.75c-23.273 0-45.592-8.112-62.049-22.553C9.245 117.007 0 97.422 0 77c0-20.422 9.245-40.007 25.701-54.447C42.158 8.113 64.477 0 87.75 0h175.5zM87.75 30.8c-13.964 0-27.355 4.867-37.23 13.532C40.648 52.996 35.1 64.747 35.1 77s5.547 24.004 15.42 32.668c9.875 8.665 23.266 13.532 37.23 13.532h175.5c13.964 0 27.355-4.867 37.229-13.532C310.353 101.004 315.9 89.253 315.9 77s-5.547-24.004-15.421-32.668C290.605 35.667 277.214 30.8 263.25 30.8H87.75zM263.25 194H87.75c-23.273 0-45.592 8.112-62.049 22.553C9.245 230.993 0 250.578 0 271c0 20.422 9.245 40.007 25.701 54.447C42.158 339.888 64.477 348 87.75 348h175.5c23.273 0 45.592-8.112 62.049-22.553C341.755 311.007 351 291.422 351 271c0-20.422-9.245-40.007-25.701-54.447C308.842 202.112 286.523 194 263.25 194v0zm0 123.2c-13.964 0-27.355-4.867-37.229-13.532-9.874-8.664-15.421-20.415-15.421-32.668s5.547-24.004 15.421-32.668c9.874-8.665 23.265-13.532 37.229-13.532 13.964 0 27.355 4.867 37.229 13.532 9.874 8.664 15.421 20.415 15.421 32.668s-5.547 24.004-15.421 32.668c-9.874 8.665-23.265 13.532-37.229 13.532z" />
+          </svg>
+          <div class="action-drop">
+            <div class="action-theme">
+              <div class="action-mode">
+                <div class="mode-glyph">
+                  <i class="fas fa-adjust"></i>
+                </div>
+                <div>Dark mode</div>
+              </div>
+              <div class="action-focus">
+                <div class="focus-glyph">
+                  <i class="fas fa-moon"></i>
+                </div>
+                <div>Focus</div>
+              </div>
+            </div>
+            <div class="action-color">
+              <h3>System Color</h3>
+              <div class="action-colors">
+                <div class="orange-div color-div">
+                  <div class="orange color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="green-div color-div">
-                    <div class="green color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="green-div color-div">
+                  <div class="green color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="light-blue-div color-div">
-                    <div class="light-blue color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="light-blue-div color-div">
+                  <div class="light-blue color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="blue-div color-div">
-                    <div class="blue color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="blue-div color-div">
+                  <div class="blue color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="violet-div color-div">
-                    <div class="violet color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="violet-div color-div">
+                  <div class="violet color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="purple-div color-div">
-                    <div class="purple color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="purple-div color-div">
+                  <div class="purple color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
-                  <div class="red-div color-div">
-                    <div class="red color">
-                      <div>
-                        <i class="fas fa-check"></i>
-                      </div>
+                </div>
+                <div class="red-div color-div">
+                  <div class="red color">
+                    <div>
+                      <i class="fas fa-check"></i>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="action-notch">
+            </div>
+            <!-- <div class="action-notch">
               <div class="notch-glyph">
                 <i class="fas fa-laptop"></i>
               </div>
@@ -699,130 +699,94 @@
                 Notch
               </div>
             </div> -->
-              <div class="action-sound">
-                <div class="sound-glyph">
-                  <i class="fas fa-volume-up"></i>
-                </div>
-                <div>
-                  <input type="range" id="sound" class="slider" />
-                </div>
+            <div class="action-sound">
+              <div class="sound-glyph">
+                <i class="fas fa-volume-up"></i>
               </div>
-              <div class="action-wallpaper">
-                <div class="action-wall"></div>
-                <div>
-                  <h3>Perfect</h3>
-                  <h4>Ed Sheeran &#247; (Divide)</h4>
+              <div>
+                <input type="range" id="sound" class="slider" />
+              </div>
+            </div>
+            <div class="action-wallpaper">
+              <div class="action-wall"></div>
+              <div>
+                <h3>Perfect</h3>
+                <h4>Ed Sheeran &#247; (Divide)</h4>
+              </div>
+              <div class="perfect">
+                <div class="perfect-play">
+                  <i class="fas fa-play"></i>
                 </div>
-                <div class="perfect">
-                  <div class="perfect-play">
-                    <i class="fas fa-play"></i>
-                  </div>
-                  <div class="perfect-pause">
-                    <i class="fas fa-pause"></i>
-                  </div>
+                <div class="perfect-pause">
+                  <i class="fas fa-pause"></i>
                 </div>
               </div>
             </div>
           </div>
-          <span id="time"> </span>
-        </nav>
-      </div>
-      <div id="contextMenu" class="contextMenu">
-        <div class="context-link"><a href="">New Database</a></div>
-        <div class="drop-div"></div>
-        <div class="context-link"><a href="">Get Info</a></div>
-        <div class="context-link"><a href="">Change Background</a></div>
-        <div class="drop-div"></div>
-        <div class="stack context-link">
-          <i class="fas fa-check left-glyph"></i><a href="">Use Stacks</a>
         </div>
-        <div class="stack context-link">
-          <i class="fas fa-angle-right right-glyph"></i
-          ><a href="">Group Stacks By</a>
-        </div>
-        <div class="context-link"><a href="">Show View Options</a></div>
+        <span id="time"> </span>
+      </nav>
+    </div>
+    <div id="contextMenu" class="contextMenu">
+      <div class="context-link"><a href="">New Database</a></div>
+      <div class="drop-div"></div>
+      <div class="context-link"><a href="">Get Info</a></div>
+      <div class="context-link"><a href="">Change Background</a></div>
+      <div class="drop-div"></div>
+      <div class="stack context-link">
+        <i class="fas fa-check left-glyph"></i><a href="">Use Stacks</a>
       </div>
-      <div id="dock">
-        <div class="dock-container">
-          <button class="icon">
-            <div class="icon-1">
-              <span>Database</span>
-              <img
-                class="app-icon"
-                data-icon="0"
-                src="./assets/icons/finder.png"
-              />
-            </div>
-            <div class="icon-2">
-              <span>Sql</span>
-              <img
-                class="app-icon"
-                data-icon="1"
-                src="./assets/icons/tableplus.png"
-              />
-            </div>
-            <span class="dock-line"></span>
-            <div class="icon-3">
-              <span>Harsha</span>
-              <img
-                class="app-icon"
-                data-icon="2"
-                src="./assets/icons/harsha.png"
-              />
-            </div>
-            <div class="icon-4">
-              <span>Praveen</span>
-              <img
-                class="app-icon"
-                data-icon="3"
-                src="./assets/icons/praveen.png"
-              />
-            </div>
-            <div class="icon-5">
-              <span>Ravindar</span>
-              <img
-                class="app-icon"
-                data-icon="4"
-                src="./assets/icons/ravindar.png"
-              />
-            </div>
-            <div class="icon-6">
-              <span>Vineeth</span>
-              <img
-                class="app-icon"
-                data-icon="5"
-                src="./assets/icons/vineeth.png"
-              />
-            </div>
-            <div class="icon-7">
-              <span>Nagasai</span>
-              <img
-                class="app-icon"
-                data-icon="6"
-                src="./assets/icons/nagasai.png"
-              />
-            </div>
-            <span class="dock-line"></span>
-            <div class="icon-8">
-              <span>VSCode</span>
-              <img
-                class="app-icon"
-                data-icon="7"
-                src="./assets/icons/vscode.png"
-              />
-            </div>
-            <div class="icon-9">
-              <span>Source</span>
-              <img
-                class="app-icon"
-                data-icon="8"
-                src="./assets/icons/github.png"
-              />
-            </div>
-          </button>
-        </div>
+      <div class="stack context-link">
+        <i class="fas fa-angle-right right-glyph"></i><a href="">Group Stacks By</a>
       </div>
-    </main>
-    <script type="module" src="./scripts/app.js"></script>
-  </body>
+      <div class="context-link"><a href="">Show View Options</a></div>
+    </div>
+    <div id="dock">
+      <div class="dock-container">
+        <button class="icon">
+          <div class="icon-1">
+            <span>Database</span>
+            <img class="app-icon" data-icon="0" src="./assets/icons/finder.png" />
+          </div>
+          <div class="icon-2">
+            <span>Sql</span>
+            <img class="app-icon" data-icon="1" src="./assets/icons/tableplus.png" />
+          </div>
+          <span class="dock-line"></span>
+          <div class="icon-3">
+            <span>Harsha</span>
+            <img class="app-icon" data-icon="2" src="./assets/icons/harsha.png" />
+          </div>
+          <div class="icon-4">
+            <span>Praveen</span>
+            <img class="app-icon" data-icon="3" src="./assets/icons/praveen.png" />
+          </div>
+          <div class="icon-5">
+            <span>Ravindar</span>
+            <img class="app-icon" data-icon="4" src="./assets/icons/ravindar.png" />
+          </div>
+          <div class="icon-6">
+            <span>Vineeth</span>
+            <img class="app-icon" data-icon="5" src="./assets/icons/vineeth.png" />
+          </div>
+          <div class="icon-7">
+            <span>Nagasai</span>
+            <img class="app-icon" data-icon="6" src="./assets/icons/nagasai.png" />
+          </div>
+          <span class="dock-line"></span>
+          <div class="icon-8">
+            <span>VSCode</span>
+            <img class="app-icon" data-icon="7" src="./assets/icons/vscode.png" />
+          </div>
+          <div class="icon-9">
+            <span>Source</span>
+            <img class="app-icon" data-icon="8" src="./assets/icons/github.png" />
+          </div>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./scripts/app.js"></script>
+</body>
+
 </html>
