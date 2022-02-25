@@ -33,6 +33,7 @@ export class Window {
 			bottom: 120,
 			url: data?.url || '',
 			html: data?.html || '',
+			mount: data?.mount || '',
 			left: 10,
 			width: '60%',
 			height: '75%',
