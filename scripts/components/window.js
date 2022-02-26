@@ -26,17 +26,14 @@ export class Window {
 			class: [
 				"no-full",
 			],
-			x: 50 + 75 * this.i,
-			y: 50 + 25 * this.i,
+			x: 50 + 60 * this.i,
+			y: 50 + 0 * this.i,
 			top: 40,
-			right: 10,
-			bottom: 120,
 			url: data?.url || '',
 			html: data?.html || '',
 			mount: data?.mount || '',
-			left: 10,
 			width: '60%',
-			height: '75%',
+			height: '85%',
 			onclose: () => {
 				this.isOpen = false;
 				dockIcons.forEach((i) => {
@@ -62,3 +59,7 @@ export const dockWindows = dockTitles.map((title, i) => new Window({
 	title: title,
 	i: i,
 }));
+export const dbOSWindows = [
+	new Window({ title: 'about dbOS', i: 2 }),
+	new Window({ title: 'dbOS Help', i: 4 }),
+];

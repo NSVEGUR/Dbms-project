@@ -174,8 +174,8 @@ input[type="password"] {
 
 #menu {
   background: var(--system-transparent-color-primary);
-  backdrop-filter: blur(20px);
-  position: absolute;
+  position: fixed;
+  z-index: 9900;
   width: 100vw;
 }
 
@@ -184,6 +184,19 @@ input[type="password"] {
   display: flex;
   max-width: 100%;
   justify-content: space-between;
+}
+#menu nav:before{
+  content: '';
+
+  width: inherit;
+  height: inherit;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  z-index: 0;
+  backdrop-filter: blur(12px);
 }
 .notch {
   position: fixed;
@@ -255,25 +268,26 @@ nav .content .links {
   background: var(--system-transparent-color-primary-op);
 }
 .menu-drop {
+  backdrop-filter: blur(20px);
   color: var(--system-text-color);
   font-size: 13px;
   width: 200px;
   position: absolute;
-  z-index: 99999;
   top: 41px;
   left: 0px;
   padding: 10px 5px;
   background: var(--system-transparent-color-primary);
   border-radius: 10px;
-  backdrop-filter: blur(20px);
   box-shadow: var(--shadow-effect);
   display: none;
 }
+
 #contextMenu {
   position: absolute;
   color: var(--system-text-color);
   font-size: 13px;
   width: 200px;
+  z-index: 9900;
   padding: 10px 5px;
   background: var(--system-transparent-color-primary);
   border-radius: 10px;
@@ -358,7 +372,6 @@ nav .content .links {
   font-weight: 500;
   color: var(--system-text-color);
   font-size: 13px;
-  z-index: 99999;
   background: var(--system-transparent-color-primary);
   border-radius: 13px;
   backdrop-filter: blur(20px);
@@ -853,7 +866,7 @@ background-color: var(--system-color);
   margin: 1px 5px;
   background: var(--system-transparent-color-secondary-op);
   width: 0.5px;
-  height: 60px;
+  height: 4rem;
 }
 @media (max-width: 768px) {
   #dock {
@@ -865,6 +878,9 @@ background-color: var(--system-color);
   }
   .app-icon {
     width: 58px;
+  }
+  .dock-line {
+    height: 3rem;
   }
 }
 

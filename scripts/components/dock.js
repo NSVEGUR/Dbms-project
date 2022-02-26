@@ -1,4 +1,4 @@
-import { dockWindows } from "./window.js";
+import { dockWindows, dbOSWindows } from "./window.js";
 
 const dockIcons = document.querySelectorAll(".icon > div");
 const mounts = [
@@ -10,6 +10,14 @@ const mounts = [
   document.getElementById("Vineeth"),
   document.getElementById("Nagasai"),
 ];
+const dbMounts = [
+  document.getElementById("dbOS"),
+  document.getElementById("help"),
+]
+
+const menuAbouts = document.querySelectorAll("div[data-icon]");
+const dbOS = document.querySelectorAll('[data-db]');
+
 
 export class Dock {
   constructor() {
@@ -34,5 +42,26 @@ export class Dock {
         }
       });
     });
+    menuAbouts.forEach((about, i) => {
+      about.addEventListener("click", function (e) {
+        const index = this.dataset.icon;
+        if (!dockWindows[index].isOpen) {
+          dockWindows[index].open({
+            mount: mounts[index].cloneNode(true),
+          });
+          const icon = document.querySelector(`img[data-icon="${index}"]`);
+          icon.parentElement.classList.add("active");
+        } else {
+          dockWindows[index].focus();
+        }
+      })
+    })
+    dbOS.forEach((icon, i) => {
+      icon.addEventListener('click', (e) => {
+        dbOSWindows[i].open({
+          mount: dbMounts[i].cloneNode(true),
+        })
+      })
+    })
   }
 }

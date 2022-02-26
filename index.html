@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="./assets/icons/finder.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="prefetch" href="./assets/dark-mac-bg.jpeg" />
-  <link rel="prefetch" href="./assets/light-mac-bg.jpeg" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -14,6 +12,10 @@
 </head>
 
 <body>
+  <!-- Just for loading -->
+  <img src="./assets/dark-mac-bg.jpeg" alt="wall" style="width:1px; height:1px; position: fixed; top: 0; right:0;" />
+  <img src="./assets/light-mac-bg.jpeg" alt="wall" style="width:1px; height:1px; position: fixed; bottom: 0; left:0;" />
+  <!-- Just for loading -->
   <section id="splash">
     <div class="splash-logo">
       <i class="fab fa-apple"></i>
@@ -48,9 +50,26 @@
   </section>
   <section id="windows">
     <div id="backstore" style="display: none">
+      <div id="dbOS">
+        <div class="DBMS">
+          <div>
+            <img src="./assets/images/dbosweb.png" alt="dbms" />
+            <h1 class="title">dbOS</h1>
+            <h3>A data driven clone of macOS</h3>
+            <p>This is a phase 1 DBMS project. Still in development and will be extended to phase to using databases.
+              This is purely made with plane html, css and js. No framework, No bundling and No dependency:)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
       <div id="database">
         <div class="DBMS">
-          <h1>DBMS</h1>
+          <div>
+            <img src="./assets/images/dbms.jpeg" alt="dbms" />
+            <h1 class="title">DBMS</h1>
+            <h3>Database Management System</h3>
+          </div>
           <p>
             A database management system (DBMS) is the software that interacts
             with end users, applications, and the database itself to capture
@@ -77,7 +96,7 @@
           </p>
           <h2>Navigational DBMS</h2>
           <p>
-            <img src="assets/images/Charles.png" alt="Charles Bachman pic" class="profile-pic" />
+            <img src="assets/images/Charles.png" alt="Charles Bachman pic" class="profile-pic float-right" />
             The introduction of the term database coincided with the
             availability of direct-access storage (disks and drums) from the
             mid-1960s onwards. Navigational DBMS was proposed by
@@ -102,7 +121,7 @@
           </ol>
           <h2>Relational DBMS</h2>
           <p>
-            <img src="assets/images/edgar.png" alt="Edgar F. Codd pic" class="profile-pic" />
+            <img src="assets/images/edgar.png" alt="Edgar F. Codd pic" class="profile-pic float-left" />
             Edgar F. Codd worked at IBM in San Jose, California, in one of
             their offshoot offices that was primarily involved in the
             development of hard disk systems. He was unhappy with the
@@ -173,7 +192,11 @@
     <div id="backstore" style="display: none">
       <div id="sql">
         <div class="DBMS">
-          <h1>SQL</h1>
+          <div>
+            <img src="./assets/images/sql.png" alt="dbms" />
+            <h1 class="title">SQL</h1>
+            <h3>Structured Query Language</h3>
+          </div>
           <p>
             SQL is a domain-specific language used in programming and designed
             for managing data held in a relational database management system
@@ -188,7 +211,7 @@
           </p>
           <h2>History</h2>
           <p>
-            <img src="assets/images/donald.png" alt="Donald D.Chamberlin pic" class="profile-pic" />
+            <img src="assets/images/donald.png" alt="Donald D.Chamberlin pic" class="profile-pic float-right" />
             SQL was initially developed at IBM by Donald D. Chamberlin and
             Raymond F. Boyce after learning about the relational model from
             Edgar F. Codd in the early 1970s. This version, initially called
@@ -303,6 +326,15 @@
           <div class="flex-container-data-2">
             <img src="assets/images/praveen.png" alt="harsha pic" class="profile-pic" />
             <h2>Hi I'm Praveen</h2>
+            <p>I'm a 2nd year student from Computer science department at IIITDM Kancheepuram. Passionate about
+              programming and Ethical Hacking. An optimistic person.
+              I like to make things automate from the software side and interseted in AI programming.
+              Also i started to learn frontend-dev, and want to go deep into it. I'm still at the beginners level in
+              these things. </p>
+            <p>Till now i'm good at C,C++,python, java, html & css.
+
+              My hobbies are like learning new programming related concepts and watching movies, playing video games.
+            </p>
           </div>
         </div>
       </div>
@@ -341,6 +373,13 @@
           <div class="flex-container-data-2">
             <img src="assets/images/ravinder.png" alt="harsha pic" class="profile-pic" />
             <h2>Hi I'm Ravindar</h2>
+            <p>I'm student from 2nd year cse department at IIITDM KANCHEEPURAM. I'm a beginner to web-devlopment 👷🏻. I
+              am good with frontend and now exploring React framework. Apart from my professional interests , I play
+              sports like cricket ,kabaddi. Most of free times I listen to music, read novel stories. I'm also good at
+              dance 🕺🏻.</p>
+            <p>Working on react gives me good experience and making me to learn new things in front end from my past
+              experience. I'm also learning UI design which helps me to make works attractive. I love to travel
+              different places to experience the nature and people in different lifestyles</p>
           </div>
         </div>
       </div>
@@ -379,6 +418,20 @@
           <div class="flex-container-data-2">
             <img src="assets/images/vineeth.png" alt="harsha pic" class="profile-pic" />
             <h2>Hi I'm Vineeth</h2>
+            <p>I'm an UnderGraduate student in IIITDM Kanceepuram having my major in computerscience. I have completed
+              my schooling in my hometown and completed pre-graduation in Kurnool. I have a deep passion in
+              CyberSecurity sector. I love to explore new things.</p>
+            <p>
+              I have started my research on WebDev from Feb 2022. Doing WebDev intrests me alot. I am also planning to
+              learn flutter and build apps. Working on flutter was very nice. Developing an app has been a intrest in me
+              from many years. I am so happy that one of my dream is going to come true.
+            </p>
+            <p>
+              Apart from studies i love to write stories. Stories I write are mostly doesnt contain any dialogue part. I
+              am planning to do some shortfilms with my friends. I started this story writing habit when im in 10th
+              class but it took a serious turn in this lockdown. i listen to music alot. Most people say listening music
+              might give a feel like staying in another world I am one of those most people.
+            </p>
           </div>
         </div>
       </div>
@@ -418,7 +471,7 @@
             <img src="assets/images/nagasai.png" alt="harsha pic" class="profile-pic" />
             <h2>Hi I'm Nagasai Vegur</h2>
             <p>
-              I am a Developer, Designer and Coding enthusiast. OFC I am a beginner in dev 😅. I am passionate about
+              I am a Developer, Designer and Coding enthusiast. I am passionate about
               Data Science, Web Dev, App Dev and
               Problem solving.
               I wanna learn something new, and enjoy trying out new technologies. Find my works in my gitty 😺.
@@ -438,6 +491,17 @@
         </div>
       </div>
     </div>
+    <div id="backstore" style="display: none">
+      <div id="help">
+        <div class="DBMS">
+          <div>
+            <img src="./assets/images/dbosweb.png" alt="dbms" />
+            <h1 class="title">Help</h1>
+            <h3>Please contact the developers of this project</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <main>
     <!-- <div class="notch"></div> -->
@@ -446,54 +510,54 @@
       <nav>
         <div class="content">
           <div class="logo menu-icons menu-icon-1">
-            <a href="" class="logo-link"> <i class="fab fa-apple"></i></a>
+            <a href="" class="logo-link dont-ref"> <i class="fab fa-apple"></i></a>
             <div class="menu-drop">
-              <div class="drop-link" data-open="about">
-                <a href="">About dbOS</a>
+              <div class="drop-link" data-open="about" data-db="0">
+                <a href="" class="dont-ref">About dbOS</a>
               </div>
               <div class="drop-div"></div>
               <div class="drop-link">
-                <a href="">System Preferences...</a>
+                <a href="" class="dont-ref">System Preferences...</a>
               </div>
-              <div class="drop-link"><a href="">App Store...</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">App Store...</a></div>
               <div class="drop-div"></div>
-              <div class="drop-link"><a href="">Recent Items</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Recent Items</a></div>
               <div class="drop-div"></div>
-              <div class="drop-link"><a href="">Force Quit</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Force Quit</a></div>
               <div class="drop-div"></div>
-              <div class="drop-link"><a href="">Sleep</a></div>
-              <div class="drop-link"><a href="">Restart...</a></div>
-              <div class="drop-link"><a href="">Shutdown...</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Sleep</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Restart...</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Shutdown...</a></div>
               <div class="drop-div"></div>
-              <div class="drop-link"><a href="">Lock Screen</a></div>
-              <div class="drop-link"><a href="">Log Out User...</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Lock Screen</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Log Out User...</a></div>
             </div>
           </div>
           <ul class="links">
             <li class="menu-icons menu-icon-2">
-              <a href="">Database</a>
+              <a href="" class="dont-ref">Database</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">About Database</a>
+                <div class="drop-link" data-open="about" data-icon="0">
+                  <a href="" class="dont-ref">About Database</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Open</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Open</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Database</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Database</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-3">
-              <a href="">Sql</a>
+              <a href="" class="dont-ref">Sql</a>
               <div class="menu-drop">
-                <div class="drop-link"><a href="">New Sql File</a></div>
-                <div class="drop-link" data-open="about">
-                  <a href="">Open</a>
+                <div class="drop-link"><a href="" class="dont-ref">New Sql File</a></div>
+                <div class="drop-link" data-open="about" data-icon="1">
+                  <a href="" class="dont-ref">Open</a>
                 </div>
                 <div><a href="" class="not-active">Close Window</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Get Info</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Get Info</a></div>
                 <div><a href="" class="not-active">Rename</a></div>
                 <div class="drop-div"></div>
                 <div><a href="" class="not-active">Compress</a></div>
@@ -507,108 +571,124 @@
                 <div><a href="" class="not-active">Move to trash</a></div>
                 <div><a href="" class="not-active">Eject</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Find</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Find</a></div>
                 <div class="drop-div"></div>
                 <div><a href="" class="not-active">Tags..</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-4">
-              <a href="">Harsha</a>
+              <a href="" class="dont-ref">Harsha</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">Open Harsha</a>
+                <div class="drop-link" data-open="about" data-icon="2">
+                  <a href="" class="dont-ref">Open Harsha</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-link"><a href="https://github.com/Harsha662002" target="_blank">Github</a></div>
+                <div class="drop-link"><a href="https://www.linkedin.com/in/harsha-vasireddy-9a12671ba/"
+                    target="_blank">LinkedIn</a>
+                </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Twitter</a></div>
-                <div class="drop-link"><a href="">Instagram</a></div>
-                <div><a href="" class="not-active">Mail</a></div>
+                <div><a class="not-active" href="">Twitter</a></div>
+                <div class="drop-link"><a href="https://www.instagram.com/harsha_v_7/" target="_blank">Instagram</a>
+                </div>
+                <div class="drop-link"><a href="mailto:hvasireddy329@gmail.com">Mail</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Harsha</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Hide Harsha</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-5">
-              <a href="">Praveen</a>
+              <a href="" class="dont-ref">Praveen</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">Open Praveen</a>
+                <div class="drop-link" data-open="about" data-icon="3">
+                  <a href="" class="dont-ref">Open Praveen</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-link"><a href="https://github.com/praveen-prav" target="_blank">Github</a></div>
+                <div class="drop-link"><a href="https://www.linkedin.com/in/praveen-pravee-594521194/"
+                    target="_blank">LinkedIn</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Twitter</a></div>
-                <div class="drop-link"><a href="">Instagram</a></div>
-                <div><a href="" class="not-active">Mail</a></div>
+                <div><a href="" class="not-active">Twitter</a></div>
+                <div class="drop-link"><a href="https://www.instagram.com/p_r_a_v_e_e_n__p_r_a_v_e/"
+                    target="_blank">Instagram</a></div>
+                <div class="drop-link"><a href="mailto:praveenpravee406@gmail.com">Mail</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Praveen</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Hide Praveen</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-6">
-              <a href="">Ravindar</a>
+              <a href="" class="dont-ref">Ravindar</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">Open Ravindar</a>
+                <div class="drop-link" data-open="about" data-icon="4">
+                  <a href="" class="dont-ref">Open Ravindar</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-link"><a href="https://github.com/Ravindar832" target="_blank">Github</a></div>
+                <div class="drop-link"><a href="https://www.linkedin.com/in/gugulothu-ravindar-85683a232/"
+                    target="_blank">LinkedIn</a>
+                </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Twitter</a></div>
-                <div class="drop-link"><a href="">Instagram</a></div>
-                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-link"><a href="https://twitter.com/RavindarGugulo2" target="_blank">Twitter</a></div>
+                <div class="drop-link"><a href="https://www.instagram.com/lavi_225.835/" target="_blank">Instagram</a>
+                </div>
+                <div class="drop-link"><a href="mailto:ravindarguguloth832@gmail.com">Mail</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Ravindar</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Hide Ravindar</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-7">
-              <a href="">Vineeth</a>
+              <a href="" class="dont-ref">Vineeth</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">Open Vineeth</a>
+                <div class="drop-link" data-open="about" data-icon="5">
+                  <a href="" class="dont-ref">Open Vineeth</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-link"><a href="https://github.com/VineethChabala" target="_blank">Github</a></div>
+                <div class="drop-link"><a href="https://www.linkedin.com/in/vineeth-chabala-86b077213/"
+                    target="_blank">LinkedIn</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Twitter</a></div>
-                <div class="drop-link"><a href="">Instagram</a></div>
-                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-link"><a href="https://twitter.com/Vineeth96789988" target="_blank">Twitter</a></div>
+                <div class="drop-link"><a href="https://www.instagram.com/vineethchabala/" target="_blank">Instagram</a>
+                </div>
+                <div class="drop-link"><a href="mailto:vineeth.chabala@gmail.com">Mail</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Praveen</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Hide Vineeth</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-8">
-              <a href="">Nagasai</a>
+              <a href="" class="dont-ref">Nagasai</a>
               <div class="menu-drop">
-                <div class="drop-link" data-open="about">
-                  <a href="">Open Nagasai</a>
+                <div class="drop-link" data-open="about" data-icon="6">
+                  <a href="" class="dont-ref">Open Nagasai</a>
                 </div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Github</a></div>
+                <div class="drop-link"><a href="https://github.com/NSVEGUR" target="_blank">Github</a></div>
+                <div class="drop-link"><a href="https://www.linkedin.com/in/nagasai-v-93b84921b/"
+                    target="_blank">LinkedIn</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Twitter</a></div>
-                <div class="drop-link"><a href="">Instagram</a></div>
-                <div><a href="" class="not-active">Mail</a></div>
+                <div class="drop-link"><a href="https://twitter.com/VegurS" target="_blank">Twitter</a></div>
+                <div class="drop-link"><a href="https://www.instagram.com/nsvegur/" target="_blank">Instagram</a></div>
+                <div class="drop-link"><a href="mailto:nsvegur@gmail.com">Mail</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link"><a href="">Hide Nagasai</a></div>
-                <div class="drop-link"><a href="">Hide Others</a></div>
+                <div><a href="" class="not-active">Hide Nagasai</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Hide Others</a></div>
                 <div><a href="" class="not-active">Show All</a></div>
               </div>
             </li>
             <li class="menu-icons menu-icon-9">
-              <a href="">Help</a>
+              <a href="" class="dont-ref">Help</a>
               <div class="menu-drop">
-                <div class="drop-link"><a href="">Give Feedback</a></div>
+                <div><a href="" class="not-active">Give Feedback</a></div>
                 <div class="drop-div"></div>
-                <div class="drop-link" data-open="about">
-                  <a href="">dbOS Help</a>
+                <div class="drop-link" data-open="about" data-db="1">
+                  <a href="" class="dont-ref">dbOS Help</a>
                 </div>
               </div>
             </li>
