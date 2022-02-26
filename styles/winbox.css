@@ -1,9 +1,31 @@
+.wb-body::-webkit-scrollbar {
+	background-color: transparent;
+	width: 5px;
+}
+
+/* background of the scrollbar except button or resizer */
+.wb-body::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+/* scrollbar itself */
+.wb-body::-webkit-scrollbar-thumb {
+	background-color: var(--system-thumb);
+	border-radius: 16px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.wb-body::-webkit-scrollbar-button {
+	display:none;
+}
+
 .winbox {
 	border-radius: 10px;
 	border: none;
 	box-shadow: var(--shadow-effect-window);
 	color: white;
-	background: var(--system-primary-color);
+  backdrop-filter: blur(30px);
+	background: var(--system-transparent-color-window);
 }
 .wb-body {
 	/* the width of window border: */
@@ -11,7 +33,7 @@
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	color: white;
-	background: var(--system-primary-color);
+	background: transparent;
 }
 
 .wb-title{
@@ -30,4 +52,97 @@
 .wb-icon *:hover {
 	opacity: 1;
 }
+.DBMS img{
+	max-width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.DBMS div:first-child{
+	width:60%;
+	margin: auto auto;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.DBMS {
+  text-align: justify; 
+  padding: 10px;
+	color: var(--system-text-color);
+}
 
+.DBMS h1,
+h2 {
+  text-align: center;
+}
+.DBMS .title{
+	margin-top: 2rem;
+	text-align:start;
+}
+.DBMS h3{
+	color: var(--system-transparent-color-secondary-op);
+	margin-bottom: 2rem;
+}
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
+
+.flex-container-data {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container-data-1 {
+  width: 25%;
+	height:100%;
+  background-color: transparent;
+	padding: 0 10px;
+  padding-top: 1rem;
+}
+.flex-container-data-1 a{
+	color: var(--system-text-color);
+}
+.flex-container-data-1 li{
+	margin: 5px 0;
+	padding: 0px 10px;
+	border-radius:7px;
+}
+.active-link{
+	background: var(--system-transparent-color-primary-op);
+}
+.flex-container-data-1 span{
+	padding-left:8px;
+}
+.flex-container-data-1 li:hover{
+	background: var(--system-transparent-color-primary-op);
+}
+.flex-container-data-2 {
+	padding: 10px 5px 10px 0;
+	color: var(--system-text-color);
+  width: 75%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.DBMS .profile-pic {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+	object-fit: cover;
+}
+.profile-pic {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+	object-fit: cover;
+}
+
+.flex-container-data-2 p {
+  text-align: left;
+  padding-left: 15px;
+}

@@ -7,9 +7,15 @@ const themeGlyph = document.querySelector('.mode-glyph');
 export class Helper {
 	constructor() {
 		this.dark = true;
-		const links = document.querySelectorAll('a');
-		links.forEach((link) => {
-			link.addEventListener('click', (e) => {
+		const dontrefLinks = document.querySelectorAll('.dont-ref');
+		const notActiveLinks = document.querySelectorAll('.not-active');
+		dontrefLinks.forEach((link) => {
+			link.addEventListener('click', function (e) {
+				e.preventDefault();
+			})
+		});
+		notActiveLinks.forEach((link) => {
+			link.addEventListener('click', function (e) {
 				e.preventDefault();
 			})
 		});
