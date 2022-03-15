@@ -185,8 +185,8 @@ input[type="password"] {
   max-width: 100%;
   justify-content: space-between;
 }
-#menu nav:before{
-  content: '';
+#menu nav:before {
+  content: "";
 
   width: inherit;
   height: inherit;
@@ -455,7 +455,7 @@ nav .content .links {
 .action-wall {
   width: 70px;
   height: 70px;
-  background: url("./../assets/music/perfect.jpeg") no-repeat center center;
+  background: url("./../assets/music/radheshyam.webp") no-repeat center center;
   transition: background 0.3s ease;
   background-size: cover;
   border-radius: 10px;
@@ -932,4 +932,3 @@ background-color: var(--system-color);
     transform: translateX(0);
   }
 }
-
